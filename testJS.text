@@ -1,0 +1,1835 @@
+/*https://www.codewars.com/collections/training-js-1*/
+//
+1-
+Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+The input string will only consist of lower case letters and/or spaces.
+
+Solution:
+
+function getCount(str) {
+  var vowelsCount  = 0;
+	/*expression régulière (g le fait rechercher dans toute la chaîne et tous les résultats correspondant à l'expression régulière 			complète seront renvoyés, i le rend insensible à la casse) et renvoie le nombre de correspondances. Nous vérifions null s'il 				n'y a pas de correspondance (c'est-à-dire pas de voyelles) et retournons 0 dans ce cas.*/
+  var matches_array = str.match(/[aeiou]/gi);
+ //il peut renvoyer un null si aucune correspondance n'est trouvée
+  vowelsCount = matches_array ? matches_array.length : 0;
+  
+  return vowelsCount;
+}
+
+
+2- Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+Solution :      1.      
+	        function even_or_odd(number) {
+		  return number % 2 === 0 ? "Odd" : "Even"
+		}
+		
+		2. 
+			const even_or_odd = number => number % 2 === 0 ? 'Even' : 'Odd';
+
+
+3- 
+You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+
+
+Solution:	
+	1. 
+	function getMiddle(s){
+	   let n = [...s].length;
+	   const even_or_odd = number => number % 2 === 0 ? 'Even' : 'Odd'; 
+	   return even_or_odd(n) == "Even" ? s[(n/2)-1]+s[n/2] : s[(n-1)/2];
+	 }
+
+	2.
+		/*- La fonction Math.ceil() de JavaScript permet d'arrondir le nombre passé en paramètre à son entier le plus proche dans le 				sens de l'arrondi 
+		 - Cette fonction accepte un seul paramètre est le nombre à arrondir à son
+			entier le plus proche dans la méthode d'arrondi vers le haut*/
+	function getMiddle(s){
+			/*La méthode substr() retourne la partie d'une chaîne de caractères comprise entre l'indice de départ et un certain 					nombre de caractères après celui-ci.*/
+	  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+	}
+
+4- Very simple, given a number, find its opposite.
+
+Solution :
+	1. 
+		/*Math.sign converti number en integer et 
+			envoie le signe du nombre et 
+			permet de savoir si un nombre est positif, négatif ou nul
+		*/
+		function opposite(number) {
+		  if ((Math.sign(number) == 1) || (Math.sign(number) == -1) || (Math.sign(number) == 0) || (Math.sign(number) == -0)) {
+		    return -number;
+		  } 
+		}
+	2. const opposite = number => -number;
+
+5-	This time no story, no theory. The examples below show you how to write function accum:
+		accum("abcd") -> "A-Bb-Ccc-Dddd"
+		accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+		accum("cwAt") -> "C-Ww-Aaa-Tttt"
+
+	1.
+		function accum(s) {
+		  return s.split('').map((x,index) => x.toUpperCase()+Array(index+1).join(x.toLowerCase())).join('-');
+		}
+	2.
+		function accum (s) {
+		  return [...s].map((element, index) => {
+		    return element.toUpperCase() + element.toLowerCase().repeat(index);
+		  }).join('-');
+		}
+
+
+6-A square of squares
+You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
+
+However, sometimes, you can't arrange them into a square. Instead, you end up with an ordinary rectangle! Those blasted things! If you just had a way to know, whether you're currently working in vain… Wait! That's it! You just have to check if your number of building blocks is a perfect square.
+
+Task
+Given an integral number, determine if it's a square number:
+
+In mathematics, a square number or perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself.
+
+The tests will always use some integral number, so don't worry about that in dynamic typed languages.
+
+Solution :
+	1. var isSquare = n => (!isNaN(Math.sqrt(parseInt(n)))  && Number.isInteger(Math.sqrt(parseInt(n))))?  true: false;
+	2. const isSquare = n => Math.sqrt(n) % 1 === 0 ? true : false;	
+	3. const isSquare = n => Math.sqrt(n) % 1 === 0
+
+7. Trolls are attacking your comment section!
+
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+Note: for this kata y isn't considered a vowel.
+
+
+Solution:
+const disemvowel =  str => str.replace(/[aeiou]/gi, '');
+
+
+8. n this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+Example:
+
+highAndLow("1 2 3 4 5");  // return "5 1"
+highAndLow("1 2 -3 4 5"); // return "5 -3"
+highAndLow("1 9 3 4 -5"); // return "9 -5"
+Notes:
+
+All numbers are valid Int32, no need to validate them.
+There will always be at least one number in the input string.
+Output string must be two numbers separated by a single space, and highest number is first.
+
+Solution :
+	1.	function highAndLow(numbers){
+		 const arr = numbers.split(' ').map(element => 
+		  Number.parseInt(element)
+		 );
+		  return Math.max(...arr)+" " +  Math.min(...arr);
+		}
+	2. 
+		function highAndLow(numbers){
+		  let arr = numbers.split(' ').map(Number);  
+		  return Math.max(...arr) + ' ' + Math.min(...arr);
+		}
+
+9. Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+
+Examples input/output:
+
+XO("ooxx") => true
+XO("xooxx") => false
+XO("ooxXm") => true
+XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+XO("zzoo") => false
+
+Solution :
+	1.	function XO(str) {
+		   var matches_o_array = str.match(/[o]/gi);
+		   var matches_x_array = str.match(/[x]/gi);
+		   if (matches_o_array != null && matches_x_array !=null) {   
+		     return (matches_o_array.length == matches_x_array.length) ? true: false;
+		   } else if (matches_o_array == null && matches_x_array ==null) {
+		    return true;
+		   } else if (matches_o_array != null && matches_x_array ==null) {
+		     return false;
+		   } else if (matches_o_array == null && matches_x_array !=null) {
+		     return false;
+		   } 
+		}
+
+	2.	function XO(str) {
+		    return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length;
+		}
+
+	3.	function XO(str) {
+		    let x = str.match(/x/gi);
+		    let o = str.match(/o/gi);
+		    return (x && x.length) === (o && o.length);
+		}
+
+10. 
+	Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+	For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+	Note: The function accepts an integer and returns an integer
+Solution:
+	1. 
+		function squareDigits(num){
+		  const arr = num .toString().split('');
+		  const suite = arr.map(function(val) { return val * val;});
+		  return Number(suite.join(''));
+		}
+	
+11.	Simple, given a string of words, return the length of the shortest word(s).
+
+String will never be empty and you do not need to account for different data types.
+
+Solution:
+	1.	function findShort(s){
+		  return  Math.min(...s.split(' ').map(element => 
+		      Number.parseInt(element.length)
+		    ));
+		}
+	2. 	function findShort(s){
+		    return Math.min(...s.split(" ").map (s => s.length));
+		}
+
+12.	Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
+
+If you want to know more: http://en.wikipedia.org/wiki/DNA
+
+In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". You have function with one side of the DNA (string, except for Haskell); you need to get the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
+
+More similar exercise are found here: http://rosalind.info/problems/list-view/ (source)
+
+Example: (input: output)
+
+DNAStrand ("ATTGC") // return "TAACG"
+DNAStrand ("GTAT") // return "CATA" 
+
+Solution:
+	
+	1.	function DNAStrand(dna){
+		    const a =  dna.toLowerCase().replace(/[a]/g, 'T');
+		    const t =  a.replace(/[t]/g, 'A');
+		    const c = t.replace(/[c]/g, 'G');
+		   return  c.replace(/[g]/g, 'C');
+		}
+	2.	function DNAStrand(dna){
+		   return  dna.toLowerCase().replace(/[a]/g, 'T').replace(/[t]/g, 'A').replace(/[c]/g, 'G').replace(/[g]/g, 'C');
+  		}
+
+13. Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+Examples:
+Input: 42145 Output: 54421
+
+Input: 145263 Output: 654321
+
+Input: 123456789 Output: 987654321
+
+Solution:
+	1.	function descendingOrder(n){
+		   var number = n.toString().split('');
+		    return +number.sort((a,b)=>b-a).join('');
+		}
+	2. 
+		function descendingOrder(n){
+		  return parseInt(String(n).split('').sort().reverse().join(''))
+		}
+
+
+
+14.
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+Note: if there is nothing to sum, the sum is default to 0.
+
+Solution: 
+	1.
+	  function positiveSum(arr) {
+	  var sum = 0;
+	    for(var i = 0; i < arr.length; i++) {
+	      if(arr[i] > 0) {
+	       sum += arr[i];
+	     }
+	    }
+	    
+	   return sum;
+	  }
+	2.
+	 function positiveSum(arr) {
+	   return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+		}
+
+15.
+	An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+"Dermatoglyphics" --> true
+"aba" --> false
+"moOse" --> false (ignore letter casing)
+
+Solution:
+	1.	function isIsogram(str){
+		  var i, j;
+		    str = str.toLowerCase();
+		    for(i = 0; i < str.length; ++i) {
+		      for(j = i + 1; j < str.length; ++j) {
+			if(str[i] === str[j]) {
+			  return false;
+			}
+		      }
+		    }
+		    return true;
+		}
+
+16.	In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+Example
+filter_list([1,2,'a','b']) == [1,2]
+filter_list([1,'a','b',0,15]) == [1,0,15]
+filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+
+Solution :
+	1.	function filter_list(l) {
+		  // Return a new array with the strings filtered out
+		  return l.filter(x => typeof x === 'number');
+		}
+	2.	function filter_list(l) {
+		  return l.filter(function(v) {return typeof v == 'number'})
+		}
+		
+
+17.	
+Given an array of integers your solution should find the smallest integer.
+
+For example:
+
+Given [34, 15, 88, 2] your solution will return 2
+Given [34, -345, -1, 100] your solution will return -345
+You can assume, for the purpose of this kata, that the supplied array will not be empty.
+
+Solution:
+	class SmallestIntegerFinder {
+	  findSmallestInt(args) {
+	    return Math.min(...args)
+	  }
+	}
+
+18.	
+	Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+
+[10, 343445353, 3453445, 3453545353453] should return 3453455.
+
+Solution :
+	1. 
+		function sumTwoSmallestNumbers(numbers) {  
+			let ordered = numbers.sort(function(a,b){return a-b;});
+			let result = 0;
+
+			for (let i = 0; i < ordered.length; i++){
+			  if (i===0){
+			    result+=ordered[0];
+			  }
+			  if (i===1){
+			    result+=ordered[1];
+			  }
+			}
+			return result;
+		}
+	2.
+		function sumTwoSmallestNumbers(numbers) {  
+		  var [ a, b ] = numbers.sort((a, b) => a - b)
+		  return a + b
+		}
+	3.	
+		function sumTwoSmallestNumbers(numbers){  
+		  numbers = numbers.sort(function(a, b){return a - b; });
+		  return numbers[0] + numbers[1];
+		};
+
+19.
+	In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater or equal to p = 1200 inhabitants?
+
+At the end of the first year there will be: 
+1000 + 1000 * 0.02 + 50 => 1070 inhabitants
+
+At the end of the 2nd year there will be: 
+1070 + 1070 * 0.02 + 50 => 1141 inhabitants (** number of inhabitants is an integer **)
+
+At the end of the 3rd year there will be:
+1141 + 1141 * 0.02 + 50 => 1213
+
+It will need 3 entire years.
+More generally given parameters:
+
+p0, percent, aug (inhabitants coming or leaving each year), p (population to surpass)
+
+the function nb_year should return n number of entire years needed to get a population greater or equal to p.
+
+aug is an integer, percent a positive or null floating number, p0 and p are positive integers (> 0)
+
+Examples:
+nb_year(1500, 5, 100, 5000) -> 15
+nb_year(1500000, 2.5, 10000, 2000000) -> 10
+Note:
+Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
+
+Solution:
+	1.
+	// At the end of the first year there will be: 
+	// 1000 + 1000 * 0.02 + 50 => 1070 inhabitants
+
+	// At the end of the 2nd year there will be: 
+	// 1070 + 1070 * 0.02 + 50 => 1141 inhabitants (number of inhabitants is an integer)
+
+	// At the end of the 3rd year there will be:
+	// 1141 + 1141 * 0.02 + 50 => 1213
+
+	// It will need 3 entire years.
+	// More generally given parameters:
+
+	// p0, percent, aug (inhabitants coming or leaving each year), p (population to surpass)
+
+	//the function nb_year should return n number of entire years needed to get a population greater or equal to p.
+
+	// aug is an integer, percent a positive or null number, p0 and p are positive integers (> 0)
+
+	// Examples:
+	// nb_year(1500, 5, 100, 5000) -> 15
+	// nb_year(1500000, 2.5, 10000, 2000000) -> 10
+	// Note: Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you 			have to convert it to 0.02.
+
+	function nbYear(p0, percent, aug, p) {
+	  // Initialise array.   
+		var finalCatch = [];
+	  // Early conversion.
+	  var percent = percent / 100;
+		// Looping through.
+	  for(var p0; p0 < p; p0+=p0*percent+aug) {
+			currValue = p0 + p0 * percent + aug;
+			finalCatch.push(currValue);
+		}
+	  
+		return finalCatch.length;
+	}
+
+	2.	function nbYear(p0, percent, aug, p) {
+		  for(var y = 0; p0 < p; y++) p0 = p0 * (1 + percent / 100) + aug;
+		  return y;
+		}
+
+20.
+	Write a function called repeatStr which repeats the given string string exactly n times.
+
+repeatStr(6, "I") // "IIIIII"
+repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
+
+solution:
+	1.
+		function repeatStr (n, s) {				ES6: repeatStr = (n, s) => s.repeat(n)
+		 return s.repeat(n);
+		}
+	2.
+		function repeatStr (n, s) {
+		var str="";
+		for(var i=0; i < n; i++)
+		  str+=s;
+		  return str;
+		}
+	}
+
+			//################ "ALGORITHME"  ##########################
+21.
+Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
+
+(In this case, all triangles must have surface greater than 0 to be accepted).
+
+Solution:
+	1.	function isTriangle(a,b,c) {
+		    return  (a <= 0 || b <= 0 || c <= 0) ? false
+							 : (a+b > c && a+c > b && c+b > a) ? true
+							 : false;
+		}	
+	2.	function isTriangle(a,b,c) {
+		   return a + b > c && a + c > b && c + b > a;
+		}
+
+22.
+	You might know some pretty large perfect squares. But what about the NEXT one?
+
+	Complete the findNextSquare method that finds the next integral perfect square after the one passed as a parameter. Recall that an 		integral perfect square is an integer n such that sqrt(n) is also an integer.
+
+	If the parameter is itself not a perfect square then -1 should be returned. You may assume the parameter is non-negative.
+
+	Examples:(Input --> Output)
+
+	121 --> 144
+	625 --> 676
+	114 --> -1 since 114 is not a perfect square
+
+	Solution:
+		1. function findNextSquare(sq) {
+		  if(sq != Math.floor(Math.sqrt(sq)) * Math.floor(Math.sqrt(sq))){
+			    return -1;
+		    }
+		    var tmp = Math.sqrt(sq);
+		    tmp++;
+		    return Math.round(tmp*tmp);
+		}
+		2. function findNextSquare(sq) {
+			  return Math.sqrt(sq)%1? -1 : Math.pow(Math.sqrt(sq)+1,2);
+			}
+
+23.
+Usually when you buy something, you're asked whether your credit card number, phone number or answer to your most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it.
+
+Your task is to write a function maskify, which changes all but the last four characters into '#'.
+
+Examples
+maskify("4556364607935616") == "############5616"
+maskify(     "64607935616") ==      "#######5616"
+maskify(               "1") ==                "1"
+maskify(                "") ==                 ""
+
+// "What was the name of your first pet?"
+maskify("Skippy")                                   == "##ippy"
+maskify("Nananananananananananananananana Batman!") == "####################################man!"
+
+Solution:
+	1.
+	function maskify(cc) {
+	  return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4); 
+	}
+	2.
+	function maskify(cc) {
+	  return cc.replace(/.(?=....)/g, '#');
+	}
+
+24.
+	Given the triangle of consecutive odd numbers:
+
+		     1
+		  3     5
+	       7     9    11
+	   13    15    17    19
+	21    23    25    27    29
+	...
+	Calculate the sum of the numbers in the nth row of this triangle (starting at index 1) e.g.: (Input --> Output)
+
+	1 -->  1
+	2 --> 3 + 5 = 8
+
+Solution:
+	function rowSumOddNumbers(n) {
+	  //This means n*n*n
+		return Math.pow(n, 3);
+	}
+
+25.
+		Create a function named divisors/Divisors that takes an integer n > 1 and returns an array with all of the integer's divisors(except for 1 and the number itself), from smallest to largest. If the number is prime return the string '(integer) is prime' (null in C#) (use Either String a in Haskell and Result<Vec<u32>, String> in Rust).
+
+	Example:
+	divisors(12); // should return [2,3,4,6]
+	divisors(25); // should return [5]
+	divisors(13); // should return "13 is prime"
+
+Solution:
+	1.
+		function divisors(integer) {
+		var res = []
+		  for (var i = 2; i <= Math.floor(integer / 2); ++i) if (integer % i == 0) res.push(i);
+		  return res.length ? res : integer + ' is prime'
+		};
+	2.
+	
+
+				//################ "DATA TYPE"  ##########################	
+26.
+	Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+
+[10, 343445353, 3453445, 3453545353453] should return 3453455.
+
+	Solution:
+	1.
+		function makeNegative(num) {
+		  return num > 0 ? num * -1: num;
+		}
+	2.
+		function makeNegative(num) {
+		  return -Math.abs(num);
+		}
+			
+27.
+	It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given 	one parameter, the original string. You don't have to worry with strings with less than two characters.
+Solution :
+	1.
+		function removeChar(str){
+		  return str.slice(1, str.length - 1);
+		};
+
+28.
+	Simple, remove the spaces from the string, then return the resultant string.
+	Solution:
+		1.	function noSpace(x){
+			  //regular expressions 
+			  return x.replace(/\s/g, '');
+			}
+		2.
+			function noSpace(x){return x.split(' ').join('')}
+
+29.
+	Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+Solution:
+	1.
+	function boolToWord( bool ){
+	 return bool == true? "Yes": "No";
+	}
+	2.
+	function boolToWord( bool ){
+	  return bool ? 'Yes':'No';
+	}	
+
+30.
+	We need a function that can transform a number into a string.
+	What ways of achieving this do you know?
+
+	Examples:
+	123 --> "123"
+	999 --> "999"
+	Solution:
+		function numberToString(num) {
+		  return num.toString();
+		}
+
+				//################ "Numbers"  ##########################
+31.
+	Your task is to create a function that does four basic mathematical operations.
+
+	The function should take three arguments - operation(string/char), value1(number), value2(number).
+	The function should return result of numbers after applying the chosen operation.
+
+	Examples
+	basicOp('+', 4, 7)         // Output: 11
+	basicOp('-', 15, 18)       // Output: -3
+	basicOp('*', 5, 5)         // Output: 25
+	basicOp('/', 49, 7)        // Output: 7
+Solution:
+	1.
+	function basicOp(operation, value1, value2)
+	{
+	  if(operation == '+')return value1 + value2;
+	  if(operation == '-')return value1 - value2;
+	  if(operation == '*')return value1 * value2;
+	  if(operation == '/')return value1 / value2;
+	}
+	2.
+	function basicOp(operation, value1, value2)
+	{
+	  return eval(value1+operation+value2);
+	}
+
+32.
+	Task:
+	Your task is to write a function which returns the sum of following series upto nth term(parameter).
+
+	Series: 1 + 1/4 + 1/7 + 1/10 + 1/13 + 1/16 +...
+	Rules:
+	You need to round the answer to 2 decimal places and return it as String.
+
+	If the given value is 0 then it should return 0.00
+
+	You will only be given Natural Numbers as arguments.
+
+	Examples:(Input --> Output)
+	1 --> 1 --> "1.00"
+	2 --> 1 + 1/4 --> "1.25"
+	5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57"
+Solution:
+	1.
+		function SeriesSum(n)
+		{
+		  // Happy Coding ^_^
+		  for (var s = 0, i = 0; i < n; i++) {
+		     s += 1 / (1 + i * 3)
+		   }
+		   return s.toFixed(2)
+		}
+
+33.
+	Nathan loves cycling.
+
+	Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+
+	You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+	For example:
+
+	time = 3 ----> litres = 1
+
+	time = 6.7---> litres = 3
+
+	time = 11.8--> litres = 5
+Solution:
+	function litres(time) {
+	   return Math.floor(time / 2);
+	}
+
+34.
+	Introduction
+	The first century spans from the year 1 up to and including the year 100, The second - from the year 101 up to and including the year 			200, etc.
+
+	Task :
+	Given a year, return the century it is in.
+
+	Input , Output Examples :
+	1705 --> 18
+	1900 --> 19
+	1601 --> 17
+Solution:
+	1.
+		function century(year) {
+		  let centuryCount = 0;
+		  while (year > 0){
+		    year = year - 100;
+		    centuryCount = centuryCount + 1;
+		  }
+		  return centuryCount;
+		}
+	2.
+		const century = year => Math.ceil(year/100)
+
+35.
+	Given an array of integers, return a new array with each value doubled.
+
+	For example:
+
+	[1, 2, 3] --> [2, 4, 6]
+Solution:
+		function maps(x){
+		  return x.map(n => n * 2);
+		}
+
+				//################ "String"  ##########################
+
+36.
+	Complete the solution so that it reverses the string passed into it.
+	'world'  =>  'dlrow'
+	Solution:
+	1.
+		function solution(str){
+		  //convert the string to an array
+		   let array = str.split("");
+
+		   //Use the reverse method
+		   array.reverse()
+
+		   //Convert it back to a string and return
+		   return array.join("")
+		}
+	2.
+		function solution(str){
+		  return str.split('').reverse().join('');  
+		}
+
+37.	
+	Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+	Examples:
+
+	solution('abc', 'bc') // returns true
+	solution('abc', 'd') // returns false
+Solution:
+	1.
+		function solution(str, ending){
+		  return str.indexOf(ending, str.length - ending.length) !== -1;
+		}
+	2.
+		function solution(str, ending){
+		  return str.endsWith(ending);
+		}
+	3.
+		
+38.
+	It's bonus time in the big city! The fatcats are rubbing their paws in anticipation... but who is going to make the most money?
+
+	Build a function that takes in two arguments (salary, bonus). Salary will be an integer, and bonus a boolean.
+
+	If bonus is true, the salary should be multiplied by 10. If bonus is false, the fatcat did not make enough money and must receive only 			his stated salary.
+
+	Return the total figure the individual will receive as a string prefixed with "£" (= "\u00A3", JS, Go, Java and Julia), "$" (C#, C++, 			Ruby, Clojure, Elixir, PHP, Python, Haskell and Lua) or "¥" (Rust).
+Solution:
+	1.
+	function bonusTime(salary, bonus) {
+	  if (bonus) {
+	      salary = salary * 10;
+	    }    
+	    return "£" + salary;
+	}
+	2.
+	function bonusTime(salary, bonus) {
+	  return bonus ? `£${10 * salary}` : `£${salary}`;
+	}
+	3.
+	function bonusTime(salary, bonus) {
+	  return '£' + salary * (bonus ? 10 : 1);
+	}
+
+39.
+	Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+	The output should be two capital letters with a dot separating them.
+
+	It should look like this:
+
+	Sam Harris => S.H
+
+	patrick feeney => P.F
+Solution:
+	1.
+	function abbrevName(name){
+	  return name.split(" ").map(el => el.substring(0,1).toUpperCase()).join(".");
+	}
+	2.
+	function abbrevName(name){
+		var nameArray = name.split(" ");
+		return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+	}
+
+40.
+	Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is composed of four nucleic 			acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
+
+	Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA its chemical structure and contains 			no Thymine. In RNA Thymine is replaced by another nucleic acid Uracil ('U').
+
+	Create a function which translates a given DNA string into RNA.
+
+	For example:
+
+	"GCAT"  =>  "GCAU"
+	The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed to be valid, i.e. each input 			string will only ever consist of 'G', 'C', 'A' and/or 'T'.
+Solution:
+	1.
+		function DNAtoRNA(dna) {
+			const dnaRegex = /^(G|C|A|T)*$/gi
+			if (dnaRegex.test(dna)) {
+			return dna.replace(/t/gi, 'U').toUpperCase()
+			} else {
+			throw new Error("Not a valid DNA string")
+			}
+		}
+	2.
+		function DNAtoRNA(dna){
+		  return dna.replace(/T/g, 'U');
+		}	
+
+				//################ "Array"  ##########################
+41.
+	Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep 			present in the array (true means present).
+
+	For example,
+
+	[true,  true,  true,  false,
+	  true,  true,  true,  true ,
+	  true,  false, true,  false,
+	  true,  false, false, true ,
+	  true,  true,  true,  true ,
+	  false, false, true,  true]
+	The correct answer would be 17.
+
+	Hint: Don't forget to check for bad values like null/undefined
+Solution:
+	1.
+	function countSheeps(arrayOfSheep) {
+	    let counter = 0
+	    for(let i = 0; i < arrayOfSheep.length; i++) {
+		if(arrayOfSheep[i]) counter += 1
+	    }
+	    return counter
+	}
+	2.
+	function countSheeps(arrayOfSheep) {
+	    let counter = 0
+	    arrayOfSheep.forEach(sheep => {
+		if(sheep) counter++
+	    })
+	    return counter
+	}
+	3.
+	function countSheeps(arr) {
+	  return arr.filter(Boolean).length;
+	}
+42.
+	Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+
+	Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
+
+	Examples:
+
+	Testing: [0, 0, 0, 1] ==> 1
+	Testing: [0, 0, 1, 0] ==> 2
+	Testing: [0, 1, 0, 1] ==> 5
+	Testing: [1, 0, 0, 1] ==> 9
+	Testing: [0, 0, 1, 0] ==> 2
+	Testing: [0, 1, 1, 0] ==> 6
+	Testing: [1, 1, 1, 1] ==> 15
+	Testing: [1, 0, 1, 1] ==> 11
+	However, the arrays can have varying lengths, not just limited to 4.
+Solution:
+	1.
+		const binaryArrayToNumber = arr => {
+		    return parseInt(arr.join(''), 2);
+		};
+
+43.
+	Can you find the needle in the haystack?
+
+	Write a function findNeedle() that takes an array full of junk but containing one "needle"
+
+	After your function finds the needle it should return a message (as a string) that says:
+
+	"found the needle at position " plus the index it found the needle, so:
+
+	findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+	should return "found the needle at position 5"
+Solution:
+	1.
+		function findNeedle(haystack) {
+		  // indexOf() Search the array for an element and returns its position.
+		  return 'found the needle at position ' + haystack.indexOf('needle');
+		}
+
+44.
+	The museum of incredible dull things
+	The museum of incredible dull things wants to get rid of some exhibitions. Miriam, the interior architect, comes up with a plan to 			remove the most boring exhibitions. She gives them a rating, and then removes the one with the lowest rating.
+
+	However, just as she finished rating all exhibitions, she's off to an important fair, so she asks you to write a program that tells 			her the ratings of the items after one removed the lowest one. Fair enough.
+
+	Task
+	Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the 			same value, remove the one with a lower index. If you get an empty array/list, return an empty array/list.
+
+	Don't change the order of the elements that are left.
+
+	Examples
+	removeSmallest([1,2,3,4,5]) = [2,3,4,5]
+	removeSmallest([5,3,2,1,4]) = [5,3,2,4]
+	removeSmallest([2,2,1,2,1]) = [2,2,2,1]
+Solution:
+	1.
+		function removeSmallest(numbers) {
+		  var outputArray = [];
+		  if (numbers.length > 1) {
+		    var smallest = numbers[0];
+		    for (i = 1; i < numbers.length; i++) {
+		      if (numbers[i] < smallest) {
+			smallest = numbers[i];
+		      }
+		    }
+		    for (j = 0; j < numbers.length; j++) {
+		      if (j === numbers.indexOf(smallest)) {
+		      } else {
+			outputArray.push(numbers[j]);
+		      }
+		    }
+		  }
+		  return outputArray;
+		}
+	2.
+		function removeSmallest(numbers) {
+		  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+		  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+		}
+45.
+	Convert number to reversed array of digits
+	Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+	Example:
+	348597 => [7,9,5,8,4,3]
+Solution:
+	1.
+	function digitize(n) {
+	  var initialArray = (""+n).split('');
+	  var reversedArray = [];
+	  for (var i = initialArray.length - 1; i >= 0; i--) {
+	    reversedArray[i] = parseInt(initialArray.shift(),10);
+	  }
+	  return reversedArray;
+	}
+	2.
+	function digitize(n) {
+	  return String(n).split('').map(Number).reverse()
+	}
+					
+						//################ "Objects"  ##########################
+46.
+	Given two numbers and an arithmetic operator (the name of it, as a string), return the result of the two numbers having that operator 			used on them.
+
+	a and b will both be positive integers, and a will always be the first number in the operation, and b always the second.
+
+	The four operators are "add", "subtract", "divide", "multiply".
+
+	A few examples:(Input1, Input2, Input3 --> Output)
+
+	5, 2, "add"      --> 7
+	5, 2, "subtract" --> 3
+	5, 2, "multiply" --> 10
+	5, 2, "divide"   --> 2.5
+	Try to do it without using if statements!
+Solution:
+	1.
+	function arithmetic(a, b, operator){
+		const obj = {
+		add: a + b,
+		subtract: a - b,
+		multiply: a * b,
+		divide: a / b
+		};
+		return obj[operator];
+	}
+
+47.
+	Create a class Ball. Ball objects should accept one argument for "ball type" when instantiated.
+
+	If no arguments are given, ball objects should instantiate with a "ball type" of "regular."
+
+	ball1 = new Ball();
+	ball2 = new Ball("super");
+
+	ball1.ballType     //=> "regular"
+	ball2.ballType     //=> "super"
+Solution:
+	1.
+		var Ball = function(ballType) {
+		  if (!ballType){
+		    this.ballType = 'regular';
+		  } else {
+		    this.ballType= 'super';
+		  }
+		};
+	2.
+		var Ball = function(ballType) {
+		  this.ballType = ballType || 'regular';
+		};
+
+48.
+	#Make them bark
+
+	You have been hired by a dogbreeder to write a program to keep record of his dogs.
+
+	You've already made a constructor Dog, so no one has to hardcode every puppy.
+
+	The work seems to be done. It's high time to collect the payment.
+
+	..hold on! The dogbreeder says he wont pay you, until he can make every dog object .bark(). Even the ones already done with your 			constructor. "Every dog barks" he says. He also refuses to rewrite them, lazy as he is.
+
+	You can't even count how much objects that bastard client of yours already made. He has a lot of dogs, and none of them can .bark().
+
+	Can you solve this problem, or will you let this client outsmart you for good?
+
+	Practical info:
+	The .bark() method of a dog should return the string 'Woof!'.
+
+	The contructor you made (it is preloaded) looks like this:
+
+	function Dog(name, breed, sex, age){
+	    this.name  = name;
+	    this.breed = breed;
+	    this.sex   = sex;
+	    this.age   = age;
+	}
+	Hint: A friend of yours just told you about how javascript handles classes diferently from other programming languages. He couldn't 			stop ranting about "prototypes", or something like that. Maybe that could help you...
+Solution:
+	1.
+	function Dog(name, breed, sex, age){
+	    this.name  = name;
+	    this.breed = breed;
+	    this.sex   = sex;
+	    this.age   = age;
+	}
+
+	Dog.prototype.bark = function() { 
+	  return 'Woof!';
+	}
+
+	var apollo = new Dog('Apollo', 'Dobermann', 'male', 5);
+	var zeus = new Dog('Zeus', 'Dobermann', 'male', 5);
+	2.
+	Dog.prototype.bark = () => 'Woof!';
+
+49.
+	Your task is to add a new property usersAnswer to every object in the array questions. The value of usersAnswer should be set to null. 			The solution should work for array of any length.
+
+	For example:
+
+	var questions = [{
+	    question: "What's the currency of the USA?",
+	    choices: ["US dollar", "Ruble", "Horses", "Gold"],
+	    corAnswer: 0
+	}, {
+	    question: "Where was the American Declaration of Independence signed?",
+	    choices: ["Philadelphia", "At the bottom", "Frankie's Pub", "China"],
+	    corAnswer: 0
+	}];
+	After adding the property the result should be:
+
+	var questions = [{
+	    question: "What's the currency of the USA?",
+	    choices: ["US dollar", "Ruble", "Horses", "Gold"],
+	    corAnswer: 0,
+	    usersAnswer: null
+	}, {
+	    question: "Where was the American Declaration of Independence signed?",
+	    choices: ["Philadelphia", "At the bottom", "Frankie's pub", "China"],
+	    corAnswer: 0,
+	    usersAnswer: null
+	}];
+	The questions array is already defined for you and is not the same as the one in the example.
+Solution:
+	1.
+	questions.forEach(function (i) {
+		i.usersAnswer = null;
+	    });
+	2.
+	for(var i=0;i<questions.length;i++){
+		questions[i].usersAnswer=null;
+	}
+	3.
+	for (obj of questions) {
+	  obj['usersAnswer'] = null;
+	}
+
+50.
+	The code provided is supposed return a person's Full Name given their first and last names.
+
+	But it's not working properly.
+
+	Notes
+	The first and/or last names are never null, but may be empty.
+
+	Task
+	Fix the bug so we can all go home early.
+Solution:
+	1.
+	class Dinglemouse{  
+		constructor( firstName, lastName ){
+			this._firstName=firstName;
+			this._lastName=lastName;
+		}
+
+		getFullName(){
+			return `${this._firstName} ${this._lastName}`.trim();
+		}
+	}
+	2.
+	function Dinglemouse(r, s) {
+	  this.getFullName = _ => (r + ' ' + s).trim();
+	}	
+		
+						//################ "Basic Language features"  ##########################
+
+51.
+	Summation
+	Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+
+	For example:
+
+	summation(2) -> 3
+	1 + 2
+
+	summation(8) -> 36
+	1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+Solution:
+	1.
+	var summation = function (num) {
+	  //with recursion
+	 return num ? num + summation(num - 1) : num
+	}
+	2.
+	function summation(num) {
+	  return num * (num + 1) / 2
+	}
+
+52.
+	Jenny has written a function that returns a greeting for a user. However, she's in love with Johnny, and would like to greet him 			slightly different. She added a special case to her function, but she made a mistake.
+
+		Can you help her?
+Solution:
+	1.
+	function greet(name){
+	  if(name === "Johnny")
+	    return "Hello, my love!";
+	  return "Hello, " + name + "!";  
+	}
+	2.
+	function greet(name){
+	  return "Hello, " + (name == "Johnny" ? "my love" : name) + "!";
+	}
+
+53.
+	You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to 			just appreciate the full number, he has to start counting them from 1.
+
+	As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that 			number, but excluding zero.
+
+	For example:
+
+	monkeyCount(10) // --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+	monkeyCount(1) // --> [1]
+Solution:
+	1.
+	const monkeyCount =  n  =>{
+	  var monkey = [];
+	  for (i = 1; i <= n; i++) {
+	    monkey.push(i);
+	  }
+	  return monkey; 
+	}
+	2.
+	var monkeyCount=n=>[...Array(n)].map((v,i)=>i+1)
+
+54.
+	Create a function which answers the question "Are you playing banjo?".
+	If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+	The function takes a name as its only argument, and returns one of the following strings:
+
+	name + " plays banjo" 
+	name + " does not play banjo"
+Solution:
+	1.
+	function areYouPlayingBanjo(name) {
+	  return name + (name[0].toLowerCase() === 'r' ? ' plays' : ' does not play') + ' banjo';
+	}
+	
+
+				//################ "Conditionnal Statements"  ##########################
+55.
+	Write a function that takes a single string (word) as argument. The function must return an ordered list containing the indexes of all 			capital letters in the string.
+
+	Example
+	Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
+Solution:
+	1.
+	var capitals = function (word) {
+	var arr = []
+	for(i = 0; i < word.length; i++){
+	    if (word[i] === word[i].toUpperCase()){
+	      arr.push(i)
+	    }
+	    
+	  }
+	  return arr
+	};
+	2.
+	const capitals = word => { return word.match(/[A-Z]/g).map( x => { return word.indexOf(x) }) }
+
+56.
+	We need a simple function that determines if a plural is needed or not. It should take a number, and return true if a plural should be 			used with that number or false if not. This would be useful when printing out a string such as 5 minutes, 14 apples, or 1 sun.
+
+	You only need to worry about english grammar rules for this kata, where anything that isn't singular (one of something), it is plural 			(not one of something).
+
+	All values will be positive integers or floats, or zero.
+Solution:
+	function plural(n) {
+	  return !(n === 1);
+	}
+57.
+	Kids drink toddy.
+	Teens drink coke.
+	Young adults drink beer.
+	Adults drink whisky.
+	Make a function that receive age, and return what they drink.
+
+	Rules:
+
+	Children under 14 old.
+	Teens under 18 old.
+	Young under 21 old.
+	Adults have 21 or more.
+	Examples: (Input --> Output)
+
+	13 --> "drink toddy"
+	17 --> "drink coke"
+	18 --> "drink beer"
+	20 --> "drink beer"
+	30 --> "drink whisky"
+Solution:
+	1.
+	function peopleWithAgeDrink(old) {
+	    if(old < 14){
+	    return ("drink toddy");
+	    } else if((old < 18) && (old >= 14)){
+	    return ("drink coke");
+	    } else if((old < 21) && (old >= 18)){
+	    return ("drink beer");
+	    }else if(old >= 21){
+	    return ("drink whisky");
+	    }
+	};
+	2.
+	const peopleWithAgeDrink = old => 'drink ' + (old < 14 ? 'toddy' : old < 18 ? 'coke' : old < 21 ? 'beer' : 'whisky')
+
+58.
+	You have to write a function that describe Leo:
+
+	function leo(oscar) {
+
+	}
+	if oscar was (integer) 88, you have to return "Leo finally won the oscar! Leo is happy".
+	if oscar was 86, you have to return "Not even for Wolf of wallstreet?!"
+	if it was not 88 or 86 (and below 88) you should return "When will you give Leo an Oscar?"
+	if it was over 88 you should return "Leo got one already!"
+Solution:
+	1.
+	const leo = oscar => {
+	  return oscar === 88 ? 'Leo finally won the oscar! Leo is happy' :
+		 oscar === 86 ? 'Not even for Wolf of wallstreet?!'       :
+		 oscar  <  88 ? 'When will you give Leo an Oscar?'        :
+		 'Leo got one already!';
+	};
+	2.
+	const leo = oscar => oscar > 88 ? "Leo got one already!" : (oscar == 88 ? "Leo finally won the oscar! Leo is happy" : (oscar == 86 ? 			"Not even for Wolf of wallstreet?!" : "When will you give Leo an Oscar?"));
+
+59.
+	Switch/Case - Bug Fixing #6
+	Oh no! Timmy's evalObject function doesn't work. He uses Switch/Cases to evaluate the given properties of an object, can you fix 			timmy's function?
+Solution:
+	1.
+	function evalObject(value){
+	   var result = 0;
+	  switch(value.operation){
+	    case'+': result = value.a + value.b; break;
+	    case'-': result = value.a - value.b; break;
+	    case'/': result = value.a / value.b; break;
+	    case'*': result = value.a * value.b; break;
+	    case'%': result = value.a % value.b; break;
+	    case'^': result = Math.pow(value.a, value.b); break;
+	    default : break;
+	  }
+
+	  return result;
+	}
+	2.
+	function evalObject(value){
+	  switch(value.operation){
+	    case'+': return value.a + value.b;
+	    case'-': return value.a - value.b;
+	    case'/': return value.a / value.b;
+	    case'*': return value.a * value.b;
+	    case'%': return value.a % value.b;
+	    case'^': return Math.pow(value.a, value.b);
+	  }
+	}
+
+			//################ "Loops"  ##########################
+
+60.
+	Sentence Smash
+	Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any 			need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space 			at the beginning or the end of the sentence!
+
+	Example
+	['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+Solution:
+	function smash (words) {
+	    return words.join(' ');
+	};
+
+61.
+	If you can't sleep, just count sheep!!
+
+	Task:
+	Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will always be 		valid, i.e. no negative integers.
+Solution:
+	1.
+	var countSheep = function (num){
+	  // Checking if positive integer or not.
+	  if (!(num >>> 0 === parseFloat(num))) {
+	    return `${num} is not a positive integer`;
+	  }
+
+	  let text = '';
+
+	  // Building text.
+	  for (let i = 1; i <= num; i++) {
+	    text += `${i} sheep...`;
+	  }
+	  return text;
+	}
+	2.
+	var countSheep = function (num){
+	  let str = "";
+	  for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+	  return str;
+	}
+62.	
+	Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+	doubleChar("String") ==> "SSttrriinngg"
+
+	doubleChar("Hello World") ==> "HHeelllloo  WWoorrlldd"
+
+	doubleChar("1234!_ ") ==> "11223344!!__  "
+Solution:
+	1.
+	function doubleChar(str) {
+	  var newString = "";
+	  for( i = 0; i < str.length; i++) {
+	    newString += str[i] + str[i];
+	  }
+	  return newString;
+	}
+	2.
+	const doubleChar = (str) => str.split("").map(c => c + c).join("");
+	3.
+	function doubleChar(str) {
+	  return str.replace(/(.)/g, "$1$1")
+	}
+63.
+	Unfinished Loop - Bug Fixing #1
+	Oh no, Timmy's created an infinite loop! Help Timmy find and fix the bug in his unfinished for loop!
+Solution:
+	1.
+	function createArray(number){
+	  var newArray = [];
+	  
+	  for(var counter = 1; counter <= number; counter++){
+	    newArray.push(counter);
+	  }
+	  
+	  return newArray;
+	}
+	2.
+	const createArray = n => Array(...Array(n)).map((v, i) => i + 1);
+	3.
+	const createArray = number => [...Array(number)].map((_, idx) => ++idx);
+
+64.
+	We want to generate a function that computes the series starting from 0 and ending until the given number.
+
+	Example:
+	Input:
+
+	> 6
+	Output:
+
+	0+1+2+3+4+5+6 = 21
+
+	Input:
+
+	> -15
+	Output:
+
+	-15<0
+
+	Input:
+
+	> 0
+	Output:
+
+	0=0
+Solution:
+	1.
+	var SequenceSum = (function() {
+	  function SequenceSum() {}
+
+	  SequenceSum.showSequence = function(count) {
+	    let sum = 0;
+	    let input = '';
+	    if (count === 0) return '0=0'
+	    if (count < 0) return `${count}<0`
+		for(let i = 0; i <= count; i++){
+		if(i == count){
+		input += String(i);
+		}else {
+		input += String(i) + '+';
+		}
+		sum = sum + i;
+		}
+		return input + ' = ' + sum;
+		};
+		return SequenceSum;
+
+	  })();
+	2.
+	var SequenceSum = {showSequence : n => n<0 ? n+'<0' : [...Array(n+1).keys()].join('+') + (n ? ' = ' : '=') + n*(n+1)/2}
+
+			//################ "gear shift - Chaging gears - Changement de vitesse"  ##########################
+65.
+	If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+	Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. Additionally, if the number 			is negative, return 0 (for languages that do have them).
+
+	Note: If the number is a multiple of both 3 and 5, only count it once.
+
+	Courtesy of projecteuler.net (Problem 1)
+Solution:
+	1.
+	function solution(number){
+	   var total = 0;
+	    for (var i = 0; i < number; i++)
+	    {
+		if (i % 3 === 0 || i % 5 === 0)
+		{
+		    total += i;
+		}
+	    }
+	    return total;
+	}
+	2.
+	function solution(number){
+	  return number < 1 ? 0 : [...new Array(number).keys()].filter(n => n % 3 == 0 || n % 5 == 0).reduce((a, b) => a + b);
+	}
+
+66.
+	Digital root is the recursive sum of all the digits in a number.
+
+	Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit 		number is produced. The input will be a non-negative integer.
+
+	Examples
+	    16  -->  1 + 6 = 7
+	   942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
+	132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
+	493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
+Solution:
+	1.
+	function digital_root(n) {
+	  return (n - 1) % 9 + 1;
+	}
+	2.
+	
+
+67.
+	You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to 			create the text that should be displayed next to such an item.
+
+	Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown 			in the examples:
+
+	[]                                -->  "no one likes this"
+	["Peter"]                         -->  "Peter likes this"
+	["Jacob", "Alex"]                 -->  "Jacob and Alex like this"
+	["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
+	["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
+Solution:
+	1.
+	function likes(names) {
+	  return {
+	    0 : 'no one likes this',
+	    1 : `${names[0]} likes this`,
+	    2 : `${names[0]} and ${names[1]} like this`,
+	    3 : `${names[0]}, ${names[1]} and ${names[2]} like this`,
+	    4 : `${names[0]}, ${names[1]} and ${names.length - 2} others like this`,
+	  }[Math.min(4, names.length)]
+	}
+
+68.
+	You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either 			entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that 			takes the array as an argument and returns this "outlier" N.
+
+	Examples
+	[2, 4, 0, 100, 4, 11, 2602, 36]
+	Should return: 11 (the only odd number)
+
+	[160, 3, 1719, 19, 11, 13, -21]
+	Should return: 160 (the only even number)
+Solution:
+	1.
+	function findOutlier(integers){
+	  var evens = [];
+	   var odds = [];
+	   for (var i = 0; i < integers.length; i++) 
+	   {
+	       if ((integers[i] % 2) == 0) {
+		   evens.push(integers[i]);
+	       } else {
+		   odds.push(integers[i]);
+	       }
+	   }
+	   var elen = evens.length;
+	   var olen = odds.length;
+
+	   if (elen > olen) {
+	       return odds[0];
+	   } 
+	   else {
+	       return evens[0];
+	   }
+	}
+	2.
+	function findOutlier(int){
+	  var even = int.filter(a=>a%2==0);
+	  var odd = int.filter(a=>a%2!==0);
+	  return even.length==1? even[0] : odd[0];
+	}
+
+69.
+	Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words 			reversed (like the name of this kata).
+
+	Strings passed in will consist of only letters and spaces.
+	Spaces will be included only when more than one word is present.
+	Examples:
+
+	spinWords("Hey fellow warriors") => "Hey wollef sroirraw" 
+	spinWords("This is a test") => "This is a test" 
+	spinWords("This is another test") => "This is rehtona test"
+Solution:
+	1.
+	function spinWords(string){
+		const sentenceArray = string.split(' ');
+		let result = '';
+		sentenceArray.map((str, i) => {
+		if (str.length >= 5){
+		sentenceArray[i] = str.split('').reverse().join('');
+		} else {
+		sentenceArray[i] = str;
+		}
+		result = sentenceArray.join(' ');
+		});
+		return result;
+	}
+	2.
+	function spinWords(words){
+	  return words.split(' ').map(function (word) {
+	    return (word.length > 4) ? word.split('').reverse().join('') : word;
+	  }).join(' ');
+	}
+	3.
+	function spinWords(string){
+	  return string.replace(/\w{5,}/g, function(w) { return w.split('').reverse().join('') })
+	}
+
+						//################ "Ajout pour atteindre 300%"  ##########################
+
+70.
+	
+Solution:
+	1.
+	function isValidWalk(walk) {
+	  var input = Array.from(walk);
+	    var nCount = 0,
+	      sCount = 0,
+	      wCount = 0,
+	      eCount = 0;
+	    if (input.length == '10') {
+	      input.forEach((value) => {
+		  if (value == 'n')
+		      nCount++;
+		  if (value == 's')
+		      sCount++;
+		  if (value == 'w')
+		    wCount++;
+		  if (value == 'e')
+	      eCount++;
+	      })
+	      if ((nCount == sCount) && (wCount == eCount)) {
+
+	    return true;
+
+	    } else
+	  return false;
+	  } else
+	  return false;
+	}
+	2.
+	function isValidWalk(walk) {
+	  var dx = 0
+	  var dy = 0
+	  var dt = walk.length
+	  
+	  for (var i = 0; i < walk.length; i++) {
+	    switch (walk[i]) {
+	      case 'n': dy--; break
+	      case 's': dy++; break
+	      case 'w': dx--; break
+	      case 'e': dx++; break
+	    }
+	  }
+	  
+	  return dt === 10 && dx === 0 && dy === 0
+	}
+71.
+	Given two arrays of strings a1 and a2 return a sorted array r in lexicographical order of the strings of a1 which are substrings of 			strings of a2.
+
+	Example 1:
+	a1 = ["arp", "live", "strong"]
+
+	a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
+
+	returns ["arp", "live", "strong"]
+
+	Example 2:
+	a1 = ["tarp", "mice", "bull"]
+
+	a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
+
+	returns []
+
+	Notes:
+	Arrays are written in "general" notation. See "Your Test Cases" for examples in your language.
+	In Shell bash a1 and a2 are strings. The return is a string where words are separated by commas.
+	Beware: r must be without duplicates.
+Solution:
+	1.
+	function inArray(array1,array2){
+	  const _match = []
+
+	  for (let i = 0; i < array2.length; i++) {
+	    for (let x = 0; x < array1.length; x++) {
+	      const a1El = array1[x];
+	      const a2El = array2[i];
+	      if (a2El.includes(a1El)) {
+		_match.push(a1El)
+	      }
+	    }
+	  }
+
+	  return _match.filter((el, i, a) => a.indexOf(el) === i).sort((a, b) => {
+	    const _a = a.toLowerCase();
+	    const _b = b.toLowerCase();
+
+	    if (_a < _b) {
+	      return -1;
+	    }
+
+	    return 1;
+	  })
+	}
+	2.
+	function inArray(arr1, arr2) {
+	  return arr1.filter(function(needle) {
+	    return arr2.some(function(haystack) {
+	      return haystack.indexOf(needle) > -1;
+	    });
+	  }).sort();
+	}
+
+72.
+	Well met with Fibonacci bigger brother, AKA Tribonacci.
+
+	As the name may already reveal, it works basically like a Fibonacci, but summing the last 3 (instead of 2) numbers of the sequence to 			generate the next. And, worse part of it, regrettably I won't get to hear non-native Italian speakers trying to pronounce it :(
+
+	So, if we are to start our Tribonacci sequence with [1, 1, 1] as a starting input (AKA signature), we have this sequence:
+
+	[1, 1 ,1, 3, 5, 9, 17, 31, ...]
+	But what if we started with [0, 0, 1] as a signature? As starting with [0, 1] instead of [1, 1] basically shifts the common Fibonacci 			sequence by once place, you may be tempted to think that we would get the same sequence shifted by 2 places, but that is not 			the case and we would get:
+
+	[0, 0, 1, 1, 2, 4, 7, 13, 24, ...]
+	Well, you may have guessed it by now, but to be clear: you need to create a fibonacci function that given a signature array/list, 			returns the first n elements - signature included of the so seeded sequence.
+
+	Signature will always contain 3 numbers; n will always be a non-negative number; if n == 0, then return an empty array (except in C 			return NULL) and be ready for anything else which is not clearly specified ;)
+
+	If you enjoyed this kata more advanced and generalized version of it can be found in the Xbonacci kata
+
+	[Personal thanks to Professor Jim Fowler on Coursera for his awesome classes that I really recommend to any math enthusiast and for 			showing me this mathematical curiosity too with his usual contagious passion :)]
+Solution:
+	1.
+	function tribonacci(signature,n){
+		var trib = signature;
+		for (i = 3; i < n; i++) {
+		trib.push((trib[i-1] + trib[i-2] + trib[i-3]));
+		}
+		return trib.slice(0, n);
+	}
+	2.
+	function tribonacci(sign,n){
+	  for (var i = 3; i < n; i++) {
+	    sign[i] = sign[i-1] + sign[i-2] + sign[i-3];
+	  }
+	  return sign.slice(0, n);
+	}
+
+73.
+	Your task is to construct a building which will be a pile of n cubes. The cube at the bottom will have a volume of n^3, the cube above 			will have volume of (n-1)^3 and so on until the top which will have a volume of 1^3.
+
+	You are given the total volume m of the building. Being given m can you find the number n of cubes you will have to build?
+
+	The parameter of the function findNb (find_nb, find-nb, findNb, ...) will be an integer m and you have to return the integer n such as 			n^3 + (n-1)^3 + ... + 1^3 = m if such a n exists or -1 if there is no such n.
+
+	Examples:
+	findNb(1071225) --> 45
+
+	findNb(91716553919377) --> -1
+Solution:
+	1.
+	function findNb(m) {
+	   // create an endless loop that increments n, the cube number, starting with a value of 1  
+	  for ( var n = 0;;n++ ) {
+	    
+	    if ( m > 0 ) {
+	      // if m, the total volume, is not 0, we will subtract the volume of the current cube from it
+	      
+	      // first calculate the volume of the current cube
+	      var currCubeVol = Math.pow( n+1, 3);
+	      
+	      // subtract the current cube volume from the total volume
+	      m = m - currCubeVol;
+	    } else if ( m == 0 ) {
+	      // if m is zero then we've found our n, so return n
+	      return n;
+	    } else if ( m < 0 ) {
+	      // if we've gone below zero there is no such n!
+	      return (-1);
+	    }
+	  }  
+	}
+	2.
+	function findNb(m) {
+	  var n = 0
+	  while (m > 0) m -= ++n**3
+	  return m ? -1 : n
+	}
+
+74.
+	The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a hexadecimal representation being 		returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.
+
+	Note: Your answer should always be 6 characters long, the shorthand with 3 will not work here.
+
+	The following are examples of expected output values:
+
+	rgb(255, 255, 255) // returns FFFFFF
+	rgb(255, 255, 300) // returns FFFFFF
+	rgb(0,0,0) // returns 000000
+	rgb(148, 0, 211) // returns 9400D3
+Solution:
+	1.
+	function permutations(string) {
+	  if (string.length <= 1) {
+	    return [string];
+	  }
+	  
+	  let finalPermutations = permutations(string.substring(1))
+	    .reduce((acc, p) => {
+	      let charList = p.split('');
+	      for (let i = 0; i <= charList.length; i++) {
+		let newPermutation = charList.slice(0, i)
+		                      .concat([string[0]])
+		                      .concat(charList.slice(i))
+		                      .join('');
+		if (!acc.includes(newPermutation)) {
+		  acc.push(newPermutation);
+		} 
+	      }
+	      return acc;      
+	  },[]);
+	  return finalPermutations;
+	}
+	2.
+	function permutations(str) {
+	 return (str.length <= 1) ? [str] :
+		 Array.from(new Set(
+		   str.split('')
+		      .map((char, i) => permutations(str.substr(0, i) + str.substr(i + 1)).map(p => char + p))
+		      .reduce((r, x) => r.concat(x), [])
+		 ));
+	}
+	

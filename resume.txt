@@ -1,0 +1,2034 @@
+//A savoir
+---------------------------------------------------------------------1--------------------------------------------------------------------------
+Clients(app mob, navigateur, tv,...)-FAI-Internet-Serveurs Les serveurs connectés directement à Internet(les pages Web (contenu) sont stockées sur le disque dur de ces serveurs(serveurs Web, les serveurs de messagerie et les serveurs virtuels).)  
+Les serveurs sont des programmes ou des systèmes qui s'exécutent sur un ordinateur spécial (avec un matériel spécial comme un équipement réseau et un accès réseau dédié).
+Important protocoles: HTTP && TCP/IP && DHCP
+	-Http: définit la façon dont les messages sont formatés et transmis. Il détermine également les actions que les serveurs Web et les 		navigateurs doivent effectuer en réponse à diverses commande.
+	-IP fournit un ensemble standard de règles pour l'envoi et la réception de données sur Internet.
+		Pour être reconnus par d'autres appareils, les hôtes connectés à Internet doivent avoir une adresse IP .
+		IP est chargé de s'assurer que les paquets sont envoyés à la bonne destination.
+		Le protocole Internet fournit également des instructions de base pour le transfert de paquets entre les appareils.
+	-TCP est un protocole fondamental de la suite de protocoles Internet.
+		TCP est le composant qui collecte et réassemble les paquets de données.
+	-Le TCP/IP est catégorisé comme un protocole de "couche de transport" car il crée et maintient des connexions entre les hôtes.
+	-DHCP est un protocole qui attribue automatiquement une adresse IP unique à chaque appareil qui se connecte à un réseau.
+
+API:est un ensemble de code de programmation(logiciel) qui permet la transmission de données entre un produit logiciel(application) et un autre
+	-Importance: peuvent simplifier et accélérer le développement de logiciels.
+	-Les API Web sont des API accessibles via le protocole HTTP.
+	-REST (representational state transfer) est une architecture d'API Web très populaire.
+	-L'API REST est une API qui doit avoir certaines contraintes ou principes architecturaux, notamment : 
+		Architecture client-serveur*Apatride*Capacité de mise en cache*Système en couches.
+	-L'architecture REST utilise les instructions d'origine du protocole HTTP.
+
+		Règle n°1 : l'URI doit fonctionner comme un identifiant de ressource.
+		Règle n°2 : les verbes HTTP doivent fonctionner comme les identifiants des opérations.
+		Règle n°3 : les réponses HTTP doivent fonctionner comme des représentations de ressources.
+		Règle n°4 : les liens sont comme une relation entre des ressources.
+		Règle n°5 : L'existence d'un paramètre comme un jeton d'authentification
+
+
+Les bases de données est un ensemble structuré et organisé de données qui simplifient la gestion des données.
+	Voici les types de bases de données :
+
+		Bases de données relationnelles.
+		Bases de données orientées objet.
+		Bases de données distribuées.
+		Entrepôts de données.
+		Bases de données NoSQL.
+		Bases de données de graphes.
+		bases de données OLTP.
+SQL signifie "Structured Query Language".
+	C'est un langage de programmation qui permet de communiquer avec des bases de données pour bien gérer ses données.
+Un NoSQL“not only SQL,”. Les bases de données NoSQL(qui regroupe des systèmes de base de données qui ne sont pas relationnels) ont été conçues par des sociétés technologiques telles que Google, Amazon, Yahoo et Facebook pour fournir des moyens plus efficaces de stocker du contenu ou de traiter des données pour d'énormes sites Web.
+	Certaines des bases de données NoSQL les plus populaires sont les suivantes :
+		MongoDB,Apache Cassandra,Apache CouchDB,Redis,Elasticsearch.
+Diffrence entre BD SQL et BD NoSQL
+	Les bases de données SQL sont basées sur des tables, tandis que les bases de données NoSQL sont des magasins de documents, 			de valeurs-clés, de graphiques ou de colonnes étendues.
+	Les bases de données SQL sont relationnelles, NoSQL ne sont pas relationnelles.
+Un SGBD sert d'interface entre la base de données et ses utilisateurs finaux ou programmes
+	Une base de données nécessite généralement un logiciel de base de données complet connu sous le nom de système de gestion de base de données (SGBD).
+Développeur full stack :
+	Un développeur web full stack est une personne capable de développer à la fois des logiciels client et serveur.
+	En plus de maîtriser HTML et CSS, il/elle sait également :
+
+		Programmer une page Web (comme utiliser JavaScript, jQuery, React, Angular ou Vue)
+		Programmer un serveur (comme utiliser PHP, ASP, Python ou Node)
+		Programmer une base de données (comme utiliser SQL, SQLite ou MongoDB)
+l existe deux façons de créer un site Web :
+	Le CMS ou Content Management System
+		Les plateformes CMS les plus connues sont : WordPress, Wix, Squarespace, Joomla!, Shopify, Drupal, Blogger, Prestashop, 			Magento, Bitrix...Etc.
+	Le codage en dur
+Configuration de mon environnement de développeur afin de coder en dur:
+	.Un éditeur de texte pour écrire du code.
+	.Un navigateur Web pour prévisualiser ce que nous construisons.
+	.Contrôle de version et gestionnaire de référentiel (Git & Github).
+
+Pour accéder au Web, nous avons besoin de : Navigateur
+URL signifie : Localisateur de ressources uniformes(Uniform Resource Locator)
+Confusion entre les termes : Internet et Web.
+	link: https://www.lifewire.com/difference-between-the-internet-and-the-web-2483335
+Architecture Web
+	https://en.ryte.com/wiki/Web_Architecture
+Ethernet vs Internet: What’s the Difference?
+	https://medium.com/@echobrown1314/ethernet-vs-internet-whats-the-difference-5c29f314ede4
+What is an API?
+	https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82/
+Web Server
+	https://www.webopedia.com/definitions/web-server/
+HTTP Status Codes
+	https://httpstatuses.com/
+HTTP Methods
+	https://restfulapi.net/http-methods/
+Database
+	https://techterms.com/definition/database
+Types of Database Management Systems
+	https://www.c-sharpcorner.com/UploadFile/65fc13/types-of-database-management-systems/
+Web Development
+	https://www.techopedia.com/definition/23889/web-development
+Web Design vs. Web Development
+	https://www.upwork.com/resources/web-design-vs-web-development
+What Is a CMS?
+	https://www.hostinger.com/tutorials/best-cms
+WordPress vs. Joomla vs. Drupal(How to Choose the Right CMS Platform)
+	https://websitesetup.org/cms-comparison-wordpress-vs-joomla-drupal/
+La boîte à outils du développeur web
+	https://www.guru99.com/front-end-web-development-tools.html
+
+				1--- #####résumer#####
+
+La différence entre le Web et Internet.
+Comment fonctionne le Web ?
+Comprendre ce que sont les protocoles, les serveurs et l'API.
+Savoir ce qu'est une base de données.
+Apprendre le sens du développement web.
+Les différentes manières de créer un site web (avec CMS et avec code).
+
+---------------------------------------------------------------------2--------------------------------------------------------------------------
+
+HTML
+	https://techterms.com/definition/html
+Structure du code html
+	https://www.youtube.com/watch?v=90kC1YLNF3U&ab_channel=CodeHS
+Playcode.io
+	https://playcode.io/
+Balises HTML
+	https://www.w3schools.com/TAgs/tag_html.asp
+Body tag
+	https://www.techonthenet.com/html/elements/body_tag.php
+Balise audio
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio
+Balise video
+	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+Balise iframe
+	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
+List Html
+	https://webplatform.github.io/docs/guides/html_lists/
+Table
+	https://its.temple.edu/creating-tables-html
+Balise semantique
+	https://www.developerdrive.com/what-are-semantic-html-tags/
+Formulaire Html
+	https://www.tutorialspoint.com/html/html_forms.htm
+Elements de Formulaire
+	https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls
+
+
+
+					2--- #####RÉCAPITULATIF HTML#####
+Eh bien, nous avons appris:
+
+Comment créer une page Web.
+Comment concevoir, planifier et définir la structure de la page Web.
+Comment ajouter du contenu et utiliser des tags comme un pro !
+
+Solution au controle de création d'une page web de portfolio
+	Construisez d'avant en arrière. Commencez par la navigation car elle a tendance à être la zone centrale autour de laquelle le site tourne - la plupart de la personnalité du site a également tendance à se retrouver dans l'en-tête.
+
+En commençant par là, vous vous retrouverez à créer une convention ID/Classe et à commencer à coder les bases de vos scripts les plus intenses et les plus intéressants.
+
+J'ai construit pas mal de sites à mon époque et j'ai trouvé que c'était la progression la plus naturelle des choses, mais bien sûr, tout le monde est différent.
+
+Construire le back-end en premier est une invitation aux ennuis si vous me demandez… commencez par la pratique et appliquez la théorie plutôt que de commencer par la théorie et d'essayer de la réaliser… c'est comme monter l'escalier roulant !
+
+
+
+
+---------------------------------------------------------------------3--------------------------------------------------------------------------
+Il existe trois manières possibles d'attacher du CSS au HTML :
+
+	Inline : en utilisant l'attribut style dans les éléments HTML.
+	Interne : en utilisant un élément < style > dans la section < head >.
+	Externe : en utilisant un fichier CSS externe.
+
+Sélecteur CSS( Class selector): Pour indiquer les éléments que nous essayons de modifier
+	comment attacher un style choisi à l'élément approprié dans le but de changer le style d'un élément particulier de notre page HTML.
+Types de sélecteur :
+	https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors
+	Les trois types de sélecteurs de base sont :
+		Sélecteurs de type,Sélecteurs de classe,Sélecteurs d' identifiant.
+		Sélecteur de type : est utilisé lorsque l'on veut appliquer la même règle sur chaque élément de la page( e.g tout les h1).
+		Sélecteurs de classe : commence par un point . et sélectionne tout élément du document auquel cette classe est appliquée.
+		Sélecteur d'identifiant : la sélection par Id.Les sélecteurs d'ID sont uniques, nous ne pouvons donc les appliquer qu'au 			contenu d'un élément. Pour référencer un ID, nous faisons précéder le nom de l'ID d'un dièse (#)
+	Autres types de sélecteurs:
+		Sélecteurs multiples : SS nous permet de  sélectionner plusieurs éléments, séparer les sélecteurs par des virgules afin qu'ils 			  partagent la meme propriéteé, ainsi respecter le principe « DRY » de la programmation(i.e: éviter les répetitions inutiles).
+		Combinateur de descendants(est généralement représenté par un seul caractère espace) : 
+			Il combine deux sélecteurs de manière à ce que les éléments correspondant au deuxième sélecteur 				soient sélectionnés s'ils ont un élément ancêtre (parent, parent du parent, parent du parent du parent, etc.) 				correspondant au premier sélecteur. Les sélecteurs qui utilisent un combinateur descendant sont appelés sélecteurs 				descendants.
+		Combinateur enfant(>)  : Pour sélectionner uniquement les enfants d'un certain élément parent 
+			Les éléments descendants plus bas dans la hiérarchie ne correspondent pas.
+			Par exemple, pour sélectionner uniquement les <p>éléments qui sont des enfants directs d'<article>éléments.
+		Combinateur de frères et sœurs adjacents(+) : Par exemple, pour sélectionner tous les <p>éléments qui viennent juste après les 				<h1>éléments :
+		Combinateur général de frères et sœurs (~): Pour sélectionner tous les <p>éléments qui viennent n'importe où après les 				<h1>éléments.
+Pseudo-classes CSS(CSS pseudo-class) :
+	https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+	responsable du changement de couleur pour indiquer e.g qu'un link a été dejà cliqué ou qd ns placons notre curseur sur un 	bouton
+	Pour faire :  nommer mon SELECTEUR, ajouter :puis définir mon action.
+Modèle de boîte CSS(Basic Box Model): Chaque élément de la conception Web est un rectangle en forme de boîte (même s'il s'agit d'un cercle).
+Le modèle de boîte CSS est défini par ces quatre couches : CRBM(Content Padding Border Margin)
+
+	Content : le contenu de la boîte, où apparaissent le texte et les images
+	Padding : La padding propriété en CSS définit la partie la plus interne du modèle de boîte , créant un espace autour du contenu 			  d'un élément, à l'intérieur de toutes les marges et/ou bordures définies.
+		Les valeurs de remplissage sont définies à l'aide de longueurs ou de pourcentages et ne peuvent pas accepter de valeurs 		  négatives. La valeur initiale, ou par défaut, de toutes les propriétés de remplissage est 0.
+		Padding : la propriété padding pour créer un espacement entre la zone de contenu et la bordure d'un élément.
+			https://css-tricks.com/almanac/properties/p/padding/
+	Border : permet de spécifier à quoi doit ressembler la bordure de la boîte représentant un élément.
+		https://www.tutorialspoint.com/css/css_borders.htm
+		Border-radius: arrondit les coins de la bordure extérieure d'un élément.
+			https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
+	Margin : efface une zone en dehors de (border). La marge est transparente.
+		Fondamentalement, les marges définissent la partie la plus externe du modèle de boîte, créant un espace autour d'un élément, 				en dehors de toute bordure définie.
+		Les marges sont définies à l'aide de longueurs, de pourcentages ou du mot-clé auto et peuvent avoir des valeurs négatives.
+			https://css-tricks.com/almanac/properties/m/margin/
+Nous pouvons déterminer la dimension de n'importe quel élément html à travers le width et le height
+  width: propriété de largeur définit la largeur de la zone de contenu d'un élément.
+	https://www.techonthenet.com/css/properties/width.php
+  Height: définit la hauteur de la zone de contenu d'un élément.
+  	https://www.techonthenet.com/css/properties/height.php
+Font styling( Style de police ):
+	Color: rgb(0, 0, 255);       same as color: blue; color: #0000ff; color: #00f; color: hsl(0, 100%, 50%); 
+	font-style : utilisé pour activer et désactiver le texte en italique.
+		font-style: bold; other possible value font-style:normal; font-style:italic; font-style:oblique;
+	font-weight: Il définit le caractère gras du texte.
+	  font-weight: normal;  de nombreuses variantes de police disponibles (telles que -light, -normal, -bold, -extrabold, -black, etc.)
+	Texte-décor:Il définit ou désactive les décorations de texte sur les polices (utilisé principalement pour désactiver le soulignement 			par défaut sur les liens lors de leur style.) Les valeurs disponibles sont :
+		text-decoration: none; other possible value text-decoration:underline; text-decoration:overline; text-decoration:line-through;
+Text layout styles:Styles de mise en page du texte :
+	text-align: utilisé pour contrôler la façon dont un texte est aligné dans sa zone de contenu.
+	line-heigh: définit la hauteur de chaque ligne de texte.
+	letter-spacing and the word-spacing: permettent de définir l'espacement entre les lettres et les mots dans votre texte.
+	font-size: modifier la taille par défaut des éléments de texte.
+		Dans le cas de font-size :
+
+			1 em est équivalent à la taille de police du parent de l'élément.
+			1 rem est équivalent à la taille de police de l'élément racine de l'ensemble du document HTML.
+Css display: Affichage CSS :détermine le comportement de la boîte rectangulaire(Chaque élément d'une page Web).
+	https://css-tricks.com/almanac/properties/d/display/
+	L'affichage CSS est particulièrement utile lorsque :
+
+	nous devons aligner deux éléments HTML ensemble sur la même ligne.
+	nous voulons afficher un élément HTML sous forme de bloc.
+	nous voulons masquer un élément HTML.
+		4 types d'affichage : none, inline, block et inline-block
+		Note: the default display of an element is inline or block.
+	- display: none
+		https://www.w3schools.com/CSSref/pr_class_display.asp
+		On peut masquer des éléments en déclarant un display: none. Une autre façon est de déclarer la visibilité : hidden au lieu 				de display : none, mais il y a une différence entre elles.
+				display supprime l'element tandis que avec visibility, l'element est tjrs présent mais reste invisible.
+	- Display:inline
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow
+	- Display:block
+		https://www.w3schools.com/CSSref/pr_class_display.asp
+		Les éléments HTML sont divisés en éléments de bloc par défaut (force automatiquement un saut de ligne sans l'utilisation de 				<br>) et en éléments en ligne (nécessite un <br>saut de ligne).
+	-  Display:inline-block
+		https://learnlayout.com/inline-block.html
+		Penser à un élément en ligne avec des propriétés de largeur et de hauteur qui peuvent être définies,
+		
+Conclusion du CSS :
+	Informations utiles sur la façon de styliser une page Web.
+	Changer le style de notre contenu textuel
+	Changer sa position et manipuler la disposition des éléments.
+
+
+TD:
+	Pour les icons:
+	1-font awesome cdn link ds browser/Setup Webfont with CDN | Font Awesome/Load All Styles/copier le lien/Coller dans le head/effacer 		les parties   "integrity" &&"anonymous"
+	2-google fonts  ds browser/Google Fonts: Browse Fonts/j cherche Poppins/import/je copie tout c ki ds <style> </style>/j colle ca tt au 		debut du fichier css/j copie ensuite ce qi s rouve ds CSS rules to specify families/ j'utilise ds le code css general
+	
+
+---------------------------------------------------------------------4--------------------------------------------------------------------------
+Mise en page CSS(CSS Layout)
+CSS : Flexbox 
+	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+	Nous falicite le bon choix du  contexte d'affichage et la gestion la mise en page d'une page Web
+	Nous facilitera la conception d'une structure de mise en page flexible, dynamique et réactive sans utiliser de flottement ou de 		positionnement.
+	- CSS display: flex
+		Flexbox est lancé en transformant un élément parent en un conteneur flexible.
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+	- CSS flexbox : lignes et colonnes
+		les éléments flexibles sont principalement disposés en lignes horizontales ou en colonnes verticales.
+		https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01
+	- CSS flexbox : Justify content
+		Qlq valeurs : flex-end,center,space-between,space-around 
+		Il définit comment les éléments sont alignés le long de l'axe principal.
+		https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+	- CSS flexbox : Flex-wrap
+		https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
+	- CSS flexbox : Align-items
+		NB: Similaire à Justify content
+		https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+	- CSS flexbox : Align-content
+		Utilisé lorsque nous avons plusieurs lignes de contenu et que nous voulons les aligner 
+		NB: cette propriété n'a aucun effet lorsqu'il n'y a qu'une seule ligne d'éléments flexibles.
+CSS Positioning : Static position
+	https://developer.mozilla.org/en-US/docs/Web/CSS/position
+	La position statique est le positionnement par défaut de tous les éléments d'une page Web.
+	- Position absolute
+		Dans ce cas, le parent reçoit la position : static, et l'enfant reçoit la position : absolue
+	- Position: relative
+		Dans ce cas, le parent reçoit une valeur de position:relative et l'enfant reçoit une valeur de position:absolute.
+	- Position fixed
+		la position sera toujours verrouillée à la taille de la fenêtre du navigateur.
+	- Position sticky
+		Un élément avec position : sticky se positionne en fonction de la position de défilement de l'utilisateur.
+CSS grid system(Système de grille CSS): une grille n'est constituée que de lignes horizontales et verticales qui définissent le placement d'autres éléments de conception.
+	https://css-tricks.com/snippets/css/complete-guide-grid/
+	Par exemple, pour faire d'un certain div un conteneur de grille,
+
+	Le code CSS serait :
+	      div {
+		display: grid;
+	      }
+
+	- CSS Grid System:Column and Row
+		https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
+		https://developer.mozilla.org/en-US/docs/Glossary/Grid_Column
+		Nous devons d'abord définir des colonnes et des lignes, car une grille sans elles est totalement inutile.
+		Propriétés CSS utilisés : grid-template-columnset grid-template-rows.
+		Le code CSS serait :
+		      .grid-container {
+			display: grid;
+			grid-template-columns: 100px 200px 300px;
+			grid-template-rows: 100px 200px 300px;
+		      }
+	- CSS Grid Systems : Display 
+			https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
+		* Properties of the grid items
+			grid-column-start/grid-row-start est la ligne où commence l'élément.
+			grid-column-end/grid-row-end est la ligne où se termine l'élément.
+		* Justify-self properties(Justifier les propriétés de soi)
+			Aligne un élément de grille à l'intérieur d'une cellule le long de l'inline. 
+			Il peut avoir la valeur : center, end, startet stretch.
+CSS Responsive Design
+		https://www.uxpin.com/studio/blog/responsive-vs-adaptive-design-whats-best-choice-designers/
+		Le mot-clé du responsive design est Media query
+		La conception Web réactive est une approche par laquelle un concepteur crée une page Web hautement interactive avec 			l'utilisateur via CSS media queries. 
+			NB: CSS media queries indiquent au navigateur qu'il doit ignorer ou appliquer certaines règles en fonction de 				l'appareil de l'utilisateur. 
+	- CSS Media Query
+		https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+		 Me permet de cibler des tailles d'écran spécifiques et de spécifier des règles CSS qui seront exécutées sur cet écran.
+		NB: La règle @media fait partie des media queries
+		Exemple: @media screen et (max-width : 300px) signifie : Pour un appareil à écran d'une largeur maximale de 300px
+	- Media query breakpoints
+		https://ricostacruz.com/til/css-media-query-breakpoints
+		Sont des points où le contenu du site Web répond en fonction de la largeur de l'appareil
+CSS:Useful Resources(CSS:Useful Resources)
+	- Font-Awesome 
+		https://fontawesome.com/v6.0?next=%2F
+		C'est le moyen le plus populaire d'ajouter des icônes de polices à votre site Web.
+		Lieux pour trouver de superbes icones:   https://fontawesome.com/
+	- font-face
+		https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+		Avec font-face, nous auront la liberté d'utiliser des polices nouvelles et intéressantes
+	- bootstrap
+		https://getbootstrap.com/
+		Le code bootstrap est déjà écrit(en CSS, HTML et JavaScript) et est disponible pour tout le monde. 
+		Rend mon site Web réactif à l'aide de son système de grille.
+		Nous exploitons ces code bootstrap  sous forme de bibliothèque et n'emprunterons que ce dont nous avons besoin.
+			NB: 'snippet' consiste essentiellement à copier du code à partir d'une autre source et à le coller dans mon code.
+		Comme toute bibliothèque, pour avoir accès à ses éléments, nous devons ajouter la ligne suivante à l'intérieur de la section 				<head> de votre page HTML : 
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+Bootstrap grid system(Système de grille bootstrap)
+	https://getbootstrap.com/docs/4.0/layout/grid/
+	Bootstrap rend mon site Web réactif à l'aide de son système de grille.
+	L'idée principale derrière Bootstrap est de diviser l'écran en douze colonnes égales,
+	Il existe quatre types de résolutions (ou classes) dans Bootstrap :
+		-xs (pour les téléphones)
+		-sm (pour les tablettes 
+		-md (pour les petits ordinateurs portables) 
+		-lg (pour les ordinateurs portables et les ordinateurs de bureau)
+
+	-Pour appliquer le système de grille de Bootstrap dans notre page Web:
+		. créer un div.container
+			Ainsi, notre Bootstrap doit être à l'intérieur du div avec le conteneur de classe. 
+			Il fait une marge à droite et à gauche pour que notre contenu soit centré.
+			De plus, si nous voulons que notre page occupe tout l'écran, nous écrivons container-fluid.
+		. Ajouter des lignes. div.row
+			NB:- Row signifie une ligne à travers l'écran. 
+			   - Par dédfaut on a:     "align-items: stretch;" qi permet d'avoir des hauteurs qui s'adaptent
+			   -     "align-items: flex-start;" permet d'avoir des hauteurs qui s'adaptent au contenu
+			   - Cette ligne sera divisée en douze(appelées "columns") parties égales, où nous pourrons mettre nos éléments HTML 					et qui remplaceront la 	marge et le remplissage.
+			   - Les balises <p></p> prennent par défaut 100% de la largeur de leur parent
+			A pour propriétés:
+				    display: flex;     initialise le mode de positionnement flexbox
+				    flex-wrap: wrap;	permet d'autoriser le retour à la ligne lorsqu'il n'y a plus de place pour le contenu 									qui est à l'intérieur 
+				    margin-right: -15px;
+				    margin-left: -15px;
+		. Dimensionner les colonnes : div.col
+			A pour propriétés:
+				    flex-basis: 0;	
+				    flex-grow: 1; avec lui,tous les éléments partageront l'espace disponible de manière égale
+				    max-width: 100%;
+		. Définir une largeur de colonne : div.col-6
+			Par defaut la grille de bootstrap est divisé en  en 12 colonnes égales
+Bootstrap classes
+	https://getbootstrap.com/docs/4.0/components/alerts/
+	Boostrap met à disposition une gamme de composants et d'outils, qui peuvent être utilisés sur notre site Web.
+	Pour utiliser les classes bootstrap, nous devons donner le nom de classe approprié à la classe d'attributs
+	- Buttons
+	- Alert
+	- Navbar
+	- Progress bar
+
+RÉCAPITULATIF de la mise en page CSS
+	A ce jour, nous avons appris :
+
+	Comment créer une page Web en utilisant HTML, comment la styliser en utilisant CSS.
+	Comment utiliser des outils externes utiles tels que Bootstrap, Font-Awesome... Etc.
+	Comment rendre nos pages Web réactives, intuitives et très conviviales.
+
+
+TD:      
+	TD-debut: Comment séparer les différentes sections de ma page Web à l'aide de DIV ?
+	NB: La balise DIV à elle ne fait rien en HTML, c'est une sorte d'espace reservé ou d'identifiant.
+		Je vais l'utiliser pour entourer du contenu je souhaiterais identifier comme une section particuliere
+	1- Commencer par identifier les differentes sections de ma page web
+		Utiliser la balise DIV (en HTML, pour identifier des sections de contenu)
+	2- Donner des identifiants
+		Utiliser l'attribut ID (en HTML, pour étiqueter le contenu d'une page Web)
+	3- Commencer à appliquer certains styles css
+		Utiliser le sélecteur DIV (en CSS, pour spécifier les styles qui s'appliquent aux DIV)
+		NB: Bonnes pratiques:
+			a- Utiliser le selecteur div
+			
+	4- Ajouter une bordure à tout mes div(meme si je devais pas en tps normal avoir de bordure. Une fois que j'aurai 					terminé la conception totale de la page, je pourrait les retirer)
+		Utiliser les attributs BORDER-WIDTH, BORDER-STYLE et BORDER-COLOR (en CSS, pour définir l'aspect d'une bordure).
+
+	TD-suite: meilleures pratiques HTML5
+		- Déclarer un doctype 
+			<!DOCTYPE html>
+		- Déclarer l'encodage des caractères
+			N'oubliez pas le <meta charset='utf-8'>(ou la déclaration de l'encodage de caractères utilisé dans votre document) 
+			Cela garantira que notre page est toujours visualisée correctement.
+
+			
+---------------------------------------------------------------------5--------------------------------------------------------------------------
+Javascript : https://playcode.io/   est l' éditeur de code en ligne
+	JavaScript a été standardisé en 1997 sous le nom ECMAScript . vesrion ES10 en 2020.
+	Consiste à rendre les pages Web interactives.
+		NB: Lorsque JavaScript a été créé, il avait initialement un autre nom : "LiveScript". Mais Java était très populaire à cette 			époque, il a donc été décidé qu'étiqueter ce nouveau langage comme un « jeune frère » de Java aiderait. Mais au fur et à 			mesure de son évolution, JavaScript est devenu un langage totalement indépendant avec ses propres caractéristiques et 			caractéristiques appelé ECMAScript , et maintenant il n'a aucun rapport avec Java quoi que ce soit
+	NB: Ordinateur : c'est une machine qui peut effectuer des opérations arithmétiques et logiques.
+			 Ils font simplement ce qu'on leur dit ! 
+			 Leur valeur vient de la façon dont ils peuvent calculer et traiter rapidement d'énormes quantités d'informations.
+			 Un ordinateur nécessite souvent une intervention humaine. 
+			 C'est là qu'interviennent les programmeurs et les développeurs !
+			 Ils écrivent des programmes qui donnent des instructions à un ordinateur.
+	   Un programme informatique (également appelé application ou logiciel) est une liste d'actions données à un ordinateur.
+		Il comprend généralement un ou plusieurs fichiers texte contenant des commandes sous forme de code. C'est pourquoi les 				développeurs sont aussi appelés codeurs.
+	   Un langage de programmation est un moyen de donner des ordres à un ordinateur. C'est très similaire à un langage humain ! Chaque 			langage de programmation a son propre vocabulaire (mots-clés qui jouent chacun un rôle spécifique) et sa grammaire (règles 			définissant comment écrire des programmes dans ce langage).
+	   Avant d'écrire du code, il faut anticiper et décomposer le problème à traiter en une série d'opérations élémentaires(il s'agit d'un 					pseudocode) formant un algorithme.
+Introduction aux algorithmes
+	https://blog.hubspot.com/marketing/web-design-html-css-javascript
+	5 propriétés principales d'un algorithme que nous allons maintenant considérer :
+	1.Input
+		Un algorithme doit posséder 0 ou plusieurs entrées bien définies fournies extérieurement à l'algorithme.
+	2. Output
+		Un algorithme doit avoir 1 ou plusieurs sorties bien définies comme nous le souhaitons.
+	3. Correctness(Exactitude)
+		Chaque étape de l'algorithme doit générer une sortie correcte.
+	4. Definiteness(Définitude)
+		Les algorithmes doivent être clairs et sans ambiguïté.
+	5. Finiteness(Finitude)
+		L'algorithme doit avoir un nombre fini d'étapes qui doivent être effectuées pour accomplir la tâche à accomplir.
+Introduction à JavaScript
+	https://javascript.info/intro
+		NB: JavaScript peut s'exécuter non seulement dans le navigateur, mais également sur le serveur, ou en fait sur tout appareil 				doté d'un programme spécial appelé MOTEUR JAVASCRIPT .
+		Le navigateur dispose d'un moteur intégré parfois appelé «machine virtuelle JavaScript».
+
+		Différents moteurs ont des «noms de code» différents. Par exemple:
+
+		V8 - dans Chrome et Opera.
+		SpiderMonkey - dans Firefox.
+		… Il existe d'autres noms de code comme «Chakra» pour IE, «ChakraCore» pour Microsoft Edge, «Nitro» et «SquirrelFish» pour 				Safari, etc.
+
+
+			🕵‍♂️️Comment fonctionnent les moteurs?
+		Les moteurs sont compliqués. Mais les bases sont faciles.
+			Analyse-Compilation-Excecution
+		Le moteur (intégré s'il s'agit d'un navigateur) lit («analyse») le script.
+		Ensuite, il convertit («compile») le script en langage machine.
+		Et puis le code machine s'exécute assez rapidement.
+	Est le seul langage de programmation pouvant s'exécuter dans tous les principaux navigateurs Web.
+	Les programmes en JS sont appelés scripts.
+	Les programmes en JS peuvent être écrits directement dans le code HTML d'une page Web et s'exécuter automatiquement lors du chargement 		de la page.
+Pratique JS
+	On va pouvoir placer du code JavaScript à trois endroits différents :
+		Directement dans la balise ouvrante d’un élément HTML ;
+		Dans un élément script, au sein d’une page HTML ;
+		Dans un fichier séparé contenant exclusivement du JavaScript et portant l’extension .js.
+Les fonctions JS: Alert, Prompt & Confirm
+	https://www.w3schools.com/jsref/met_win_alert.asp
+	NB: La méthode alert() ne peut pas interagir avec le visiteur. 
+	    Pour interagir avec l'utilisateur, nous utilisons prompt(), qui demande au visiteur de saisir des informations et stocke les 			informations dans une variable.
+	    confirm() affiche une boîte de dialogue avec deux boutons, OK et Annuler et un texte en paramètre. Si l'utilisateur clique sur le 			bouton OK, confirm() renvoie true et en cliquant sur le bouton Annuler, confirm() renvoie false.
+console.log()
+	Cette fonction  JavaScript est principalement utilisée pour le débogage du code car elle permet au JavaScript d'imprimer la sortie sur 		la console.
+Commentaires en JavaScript
+	Les commentaires nous permettent d'écrire des choses qui seront ignorées par l'interpréteur et ne seront pas exécutées en tant que 		code.
+Types de données JS:
+	https://javascript.info/types
+	NB: En informatique, les données sont tout ce qui a une signification pour l'ordinateur.
+	  En Js, 7 : 6 primitive data types: Number, String, Boolean, NULL, Undefined puis Symbol  et 1 non-primitive data type 'object'.
+		NB: En JavaScript, il existe six types primitifs :
+
+			booléen (vrai ou faux)
+			nombre (y compris les entiers comme 1, -2 et les nombres à virgule flottante comme 3.14, 2e-3)
+			string ( Les ​​chaînes sont utilisées pour stocker du texte. Les chaînes doivent être à l'intérieur de guillemets 				simples ou doubles.)
+			null (null a une valeur : null. Ce n'est explicitement rien .)
+			undefined (Une variable qui n'a pas de valeur est indéfinie)
+			Symbole (Une fois que nous avons créé un symbole, sa valeur reste privée et à usage interne.)
+		   Les objets peuvent être : "Littéraux d'objets", "Tableaux", "Fonction", "RegEx", "Dates"...
+		   NB: null est en faite un objet mais il est preferable de le mettre parmi les types primitifs.
+		NB:Un objet peut stocker un grand nombre de paires clé-valeur différentes.
+Oject JS:  Les objets peuvent être : "Littéraux d'objets", "Tableaux", "Fonction", "RegEx", "Dates"...
+	1- A JavaScript object literal( Un littéral d'objet JavaScript )
+		Un littéral d'objet JavaScript est une liste séparée par des virgules de paires clé-valeur entourées d'accolades. 
+		Ces valeurs peuvent référencer tout type de données, y compris des objets et/ou des valeurs primitives.
+			e.g:
+				var person1 = {
+					name: “foulan”,
+					age: 9000,
+					isStudent: true
+				}
+
+Opérateurs arithmétiques:
+	https://www.tutorialgateway.org/javascript-arithmetic-operators/
+	4 opérations arithmétiques ( +, -,*, / ) disponibles pour l' addition , la soustraction , la multiplication et la division 			respectivement.
+		NB:	L'opérateur % est appelé modulus( module ). 
+			L'opérateur ** est appelé opérateur exponentiel.
+			NaN : e.g  La division 0 / 0 ou l'utilisation de types discordants( Some random string' * 2 ) 
+				crée un Not a Number(NaN).
+			Type infini :
+				JavaScript enregistre de très grands nombres comme l'infini. 
+				e.g, 10 ** 309 est représenté comme l'infini. La division par zéro donne aussi l'infini.
+			Incrémenter( ++ ) et décrémenter( -- ) : augmentent ou réduisent la valeur numérique d'une variable d'une unité.
+				NB: 	Souvent utilisés avec des boucles
+					Les opérateurs d'incrémentation et de décrémentation ne peuvent être utilisés que sur des variables
+						i.e : Je ne peux pas faire ceci => 5++, ou ceci => 7--
+Assignment Operators( Opérateurs d'affectation ): 
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators
+	l'opérateur d'affectation de base est égal (=)
+	Un opérateur d'affectation affecte une valeur à son opérande gauche en fonction de la valeur de son opérande droit.
+	NB: Nous pouvons combiner des opérateurs arithmétiques avec l'opérateur d'affectation regular( standard )"=" et créer des annotations 			abrégées pour les opérations standard :  e.g: a+=5
+Comparison Operators( Opérateurs de comparaison )
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
+	On peut comparer deux nombres avec >, >=, ==, ===, <=, <. 
+	le résultat de la comparaison est un booléen.
+		NB: 
+			True : Quelque chose qui s'évalue à VRAI.
+			False : Quelque chose qui s'évalue à FAUX.
+			La façon la plus simple de déterminer si quelque chose est vrai est de déterminer que ce n'est pas faux.
+			💥️💥️💥️Il n'y a que six valeurs fausses en JavaScript💥️💥️💥️ :
+				undefined , null , NaN (Not A Number), 0 , "" (chaîne vide) et false , bien sûr.
+	Les opérateurs de comparaison prennent des valeurs simples (nombres ou chaîne) comme arguments et évaluent vrai ou faux.
+	Le ! l'opérateur annule son opérande. Le vrai devient faux et le faux devient vrai.
+	e.g:
+		Strictement égal (===)	x === y	Renvoie vrai si les opérandes sont égaux et du même type.
+		Pas égal (!=)	x != y	Renvoie vrai si les opérandes ne sont pas égaux.
+		Strict pas égal (!==)	x !== y	Renvoie vrai si les opérandes ne sont pas égaux et/ou du même type
+Logical & Boolean Operators( Opérateurs logiques et booléens )
+	https://www.w3resource.com/javascript/operators/logical-operator.php
+	Les opérateurs logiques sont souvent utilisés avec les opérateurs de comparaison pour renvoyer l'évaluation des expressions au lieu de 			simplement des variables, ceci est particulièrement pratique lorsque nous définissons des conditions.
+	💥️💥️💥️Les opérateurs logiques ET( && ) et OU( || ) en JavaScript  ne renvoient ni vrai ni faux !💥️💥️💥️
+	ET logique (&&)	a&&b	Renvoie la première valeur si cet dernier vaut False, sinon renvoie la deuxième valeur quelle qu'elle soit.
+	OU logique (||)	a||b	Renvoie la première valeur si cet dernier vaut True, sinon renvoie la deuxième valeur quelle qu'elle soit.
+	
+	Nous pouvons utiliser le "!" opérateur pour convertir une valeur en booléen en la niant deux fois : 
+		en supposant que v est vrai , !!v devient vrai .
+		en supposant que w est faux , !!w devient faux .
+String Operators( Opérateurs de chaîne )
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#String
+	L' opérateur de concaténation (+) concatène deux ou plusieurs valeurs de chaîne et renvoie une autre chaîne qui est l'union des deux 			chaînes d'opérandes.
+	L'opérateur d'affectation abrégé (+=) peut également être utilisé pour concaténer des chaînes.
+	💥️💥️💥️💥️💥️💥️Il existe une nouvelle façon de concaténer des chaînes.💥️💥️💥️💥️💥️💥️
+	Template Strings:( Chaînes de modèle ) :
+		Les chaînes de modèle utilisent des backticks ( ``) plutôt que les guillemets simples ou doubles auxquels nous sommes habitués 				avec les chaînes normales.
+		💥️💥️💥️L'un de leurs premiers avantages réels est la substitution de chaînes .💥️💥️💥️
+	String substitution :
+		La substitution nous permet de prendre n'importe quelle expression JavaScript valide (y compris, par exemple, l'ajout de 				variables) et de l'insérer dans un modèle littéral en utilisant la ${}syntaxe. Le résultat sera une sortie faisant 				partie de la même chaîne.
+			e.g:
+				var name = "Lucy";
+				console.log(`Yo, ${name}!`) // prints “Yo, Lucy!”
+Program Flow: Functions( Déroulement du programme : fonctions ) :
+   Nous pouvons déclarer une fonction de deux manières.
+   -Classic Function Declaration :
+	https://developer.mozilla.org/en-US/docs/Glossary/Function
+	Une fonction est essentiellement un morceau de code qui peut être réutilisé sans avoir à l'écrire encore et encore.
+	L'instruction return renvoie la valeur de la fonction.
+			e.g:
+				function( a, b ) {
+				    return a - b;
+				}
+   -User-Defined Functions( Fonctions définies par l'utilisateur )
+	C'est lorsque nous pouvons écrire nos propres fonctions (également appelées 'User Defined Functions'« Fonctions définies par 			l'utilisateur » ou « UDF ») pour effectuer des tâches spécialisées.
+	💥️💥️💥️On peut aussi définir des fonctions sans placer le nom entre le mot-clé de function et la liste d'arguments.💥️💥️💥️
+		Function expressions: (Créer des fonctions en utilisant une variable comme référence)
+		 Cette structure est idéale si nous souhaitons créer une référence à celle-ci à l'aide d'une variable.
+			e.g: 
+				var subtract = function( a, b ) {
+				    return a - b;
+				}
+			NB: Dans  ce cas, la variable 'subtract' contient une fonction.
+    Resume:
+	La différence critique entre les déclarations de fonction et les expressions de fonction( function declarations and function 		expressions) réside dans la façon dont le navigateur les charge dans le contexte d' exécution. 
+		. Déclarations de fonction charger avant l'exécution de tout code.  
+		. Expressions de fonction charger uniquement lorsque l'interpréteur atteint cette ligne de code. 
+		Donc si nous essayons d'appeler une fonction expression avant qu'il ne soit chargé, nous obtiendrons une erreur ! 
+		Si nous appelons une déclaration de fonction à la place, cela fonctionnera toujours, car aucun code ne peut être appelé tant 			que toutes les déclarations sont chargés.
+
+Function Parameters( Paramètres de fonction )
+	https://codeburst.io/parameters-arguments-in-javascript-eb1d8bd0ef04
+	Les paramètres sont des variables répertoriées dans le cadre de la définition de la fonction.
+	Les arguments sont des valeurs transmises à la fonction lorsqu'elle est appelée.
+	En JavaScript, les paramètres des fonctions par défaut sont indéfinis.
+	Les paramètres de fonction par défaut permettent d'initialiser les paramètres nommés avec des valeurs par défaut si aucune valeur ou 			undefined n'est transmis.
+	Resume:
+		Les paramètres de fonction sont les noms répertorié dans la définition de la fonction. Les arguments d'une fonction sont les 				vrais valeurs transmises à (et reçu par) la fonction au exécution
+Calling Functions & The Return Statement( Fonctions d'appel et instruction de retour )
+	https://www.w3schools.com/js/js_function_invocation.asp
+	« Appeler », « Invoquer » ou « Exécuter » sont des termes utilisés de manière interchangeable lors de l'exécution d'une fonction 			prédéfinie.
+	💥️💥️Remarque : Lorsqu'une fonction ne renvoie rien, sa valeur de retour devient undefined💥️💥️
+Program Flow( Flux du programme )
+	Dans le développement logiciel, il existe trois types de control structures( structures de contrôle ) :
+
+		Sequence : écriture des instructions les unes après les autres.
+		Selection : soit exécuter un jeu d'instructions ou un autre.
+		Iteration( Itération ) : exécuter un ensemble d'instructions un nombre fini ou infini de fois.
+The If Statement( La déclaration Si )
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+The Else Statement(else)
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+The Else If Statement(else if)
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+The Switch Statement( La déclaration de changement )
+	https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript
+	NB: Nous pouvons toujours omettre le 'break' si nous allons utiliser l' instruction 'return' à la place.
+Program Flow: Loops(Déroulement du programme : boucles )
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+	Une boucle nous permet d'exécuter la même expression autant de fois que nous le souhaitons, en n'écrivant qu'une seule fois le code.
+The While Loop( La boucle while )
+	NB: son exécution soit identique à la boucle For
+	https://www.w3schools.com/js/js_loop_while.asp
+	Une boucle while vérifiera d'abord sa condition, si elle est évaluée à true, elle exécutera l'instruction dans son corps.
+The Do...While Loop(La boucle Do...While )
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while
+	La boucle do-while exécute le corps de la boucle au moins une fois et vérifie la condition après l'exécution et avant la fin.
+	NB: Nous utilisons principalement des boucles do-while pour la validation des entrées. L'utilisateur saisit une valeur, puis nous 			vérifions sa validité.
+	    C'est là que la boucle do-while prend tout son sens, car nous pouvons être sûrs de devoir saisir des données au moins une fois.
+The For Loop( La boucle For )
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
+	NB:  Son exécution soit identique à la boucle while
+	     La boucle for a tout ce dont nous avons besoin sur une seule ligne.Pas besoin de mélanger le corps de notre boucle avec 			l'incrément de la variable de boucle.
+	     L'en-tête d'une boucle for peut être tout vide comme for (;;)
+		
+	Etapes d'execution de la bouce For:
+		1- Initialisation d'une variable de boucle.
+		2- Vérifiez l'état. Si la condition est fausse, quittez la boucle for.
+		3- Exécutez les instructions dans le corps de la boucle si la condition est vraie.
+		4- Incrémentez la variable de boucle, puis revenons à l'étape 2.
+The For..In & For...Of Loops( Les boucles For..In et For...Of )
+	Pour ne pas s'embêter à itérer une variable " i ". Ces types de boucle peuvent s'en occuper pour nous
+	Instruction for ... in
+		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
+		NB: Enumère tous les indices disponibles des valeurs présentes dans le tableau dans l'ordre croissant.
+	Instruction for ... of
+		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+		NB: Dans ES6, il existe une boucle appelée for…of loop, qui fait exactement cela.
+instructions Break & Continue
+	https://codeburst.io/javascript-continue-vs-break-47b5c15cacc6
+	Exple d'utilisation: recuperer que les nombres pairs.
+	Nous pouvons utiliser break ou continuer à l'intérieur des boucles :
+
+		- 'break' quitte la boucle la plus proche dans laquelle il se trouve et continue avec la commande suivante.
+		- 'continue' saute et saute du corps de la boucle, et revient à l'état de la boucle.
+		Avec l'instruction 'continue' : nous arrêterons l'exécution de l'itération en cours à l'aide dans la boucle.
+Introduction To Arrays
+	https://developer.mozilla.org/en-US/docs/Glossary/array
+	Un tableau est une liste ordonnée d'éléments
+	Les tableaux nous fournissent un moyen de créer et de maintenir une liste de données.
+	Pour accéder au dernier élément d'un tableau, nous devrons utiliser arrayName.length -1 
+	NB: https://www.w3schools.com/jsref/jsref_indexof.asp
+	indexOf() renvoie -1 si la valeur n'est pas trouvée.
+Adding and Removing Elements(Ajout et suppression d'éléments )
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+	. push ajoute des éléments à la fin du tableau.
+	. unshift ajoute des éléments au début du tableau.
+	. pop supprime le dernier élément du tableau et le renvoie.
+	. shift supprime le premier élément du tableau et le renvoie
+
+	Nous pouvons supprimer n'importe quel élément du tableau. La valeur 'undefined' sera placée à la place de cet élément.
+Introduction To Objects( Introduction aux objets )
+	https://www.tutorialspoint.com/javascript/javascript_objects.htm
+	En JavaScript, un objet est une entité autonome, avec des propriétés et un type. 
+	Les objets sont composés d'attributs. 
+	Si un attribut contient une fonction, il est considéré comme une méthode de l'objet, 
+	Sinon l'attribut est considéré comme une propriété.
+	💥️Il y a une petite différence entre une fonction et une méthode : 💥️
+		Une fonction est une unité autonome d'instructions et 
+		Une méthode est attachée à un objet et peut être référencée par le mot - clé this .
+	💥️Un constructeur est une fonction qui crée et initialise un objet.💥️
+	JavaScript est un langage de programmation orientée objet (OOP). 
+		Un langage de programmation peut être appelé orienté objet s'il fournit quatre capacités de base aux développeurs: 
+			Encapsulation - la capacité de stocker des informations connexes, qu'il s'agisse de données ou de méthodes, ensemble 					dans un objet.
+				NB: Connexe(analogue,voisin): Qui est lié à quelque chose d'autre par des rapports étroits, par la similitude 						ou la dépendance
+			Aggregation( Agrégation ) - la capacité de stocker un objet à l'intérieur d'un autre objet.
+			Inheritance( Héritage ) - la capacité d'une classe à s'appuyer sur une autre classe (ou un nombre de classes) pour 					certaines de ses propriétés et méthodes.
+			Polymorphism( Polymorphism ) - la capacité d'écrire une fonction ou une méthode qui fonctionne de différentes manières.
+
+Creating an Object( Création d'un objet )
+	https://coderwall.com/p/p5cf5w/different-ways-of-creating-an-object-in-javascript
+	💥️Il existe deux manières de construire un objet en JavaScript : 💥️
+
+		object literal( Le littéral d'objet ), qui utilise des accolades : {}
+		object constructor( Le constructeur d'objet ) , qui utilise le mot-clé new
+		NB: L'utilisation de littéraux d'objet est la méthode la plus courante et la plus préférée, car elle est moins sujette aux 				incohérences et aux résultats inattendus.
+Properties & Methods: (Travailler avec des objets)
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+	Les objets peuvent avoir des propriétés et des méthodes :
+
+		Une propriété est l'association entre un nom (clé) et une valeur dans un objet, et elle peut contenir n'importe quel type de 				données. 
+		Une propriété fait généralement référence à la caractéristique d'un objet.
+		Une méthode est une fonction qui est la valeur d'une propriété d'objet, et donc une tâche qu'un objet peut effectuer.
+Accessing Object Properties( Accéder aux propriétés de l'objet )               Property accessors( Accesseurs de propriété )
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors
+	Il existe deux manières d' accéder aux propriétés d'un objet :
+
+		Notation par points : .
+			La notation par points est plus rapide et plus lisible, mais elle a plus de limites. 
+		Notation entre crochets : [ ]
+			La notation entre crochets permet d'accéder aux noms de propriété stockés dans une variable et doit être utilisée si 					la propriété d'un objet contient une sorte de caractère spécial.
+	Afin de récupérer une méthode objet:
+
+			// Initializing a gimli object
+			var gimli = {
+			    name: "Gimli",
+			    race: "dwarf",
+			    weapon: "axe",
+			    greet: function() {
+				return `Hi, my name is ${this.name}!`;
+			    },
+			};
+
+			// Calling an object method using the dot notation
+			console.log(gimli.greet()); 
+
+Adding & Modifying Object Properties( Ajout et modification des propriétés d'objet ) 
+	Grace à  l'opérateur d'affectation (=).
+	// Adding a new age property to gimli using the dot notation
+	gimli.age = 139;
+
+	// Adding new age property to gimli using the dot notation
+	gimli["age"] = 139;
+	// Adding a new fight method to gimli
+	gimli.fight = function() {
+	    return `Gimli attacks with an ${this.weapon}.`;
+	}
+
+	console.log(gimli)
+	// prints {name: "Gimli", race: "dwarf", weapon: "axe", age: 139, greet: ƒ, fight: ƒ}
+
+	// Calling the newly created method fight
+	console.log(gimli.fight());
+	// prints "Gimli attacks with an axe."
+//Removing Object Properties( Suppression des propriétés de l'objet )
+	https://www.w3schools.com/howto/howto_js_remove_property_object.asp
+	Pour supprimer une propriété d'un objet, nous utilisons le mot-clé 'delete'. 
+	'delete' est un opérateur qui supprime une propriété d'un objet.
+	L'opération de suppression renvoie true si la propriété a été supprimée avec succès ou si elle a été utilisée sur une propriété qui 			n'existe pas, sinon elle renverra false.
+	 Remarque : L'opérateur de suppression ne doit pas être utilisé  les Propriétés de l'objet JavaScript prédéfini car cela peut faire 			planter notre application.
+
+---------------------------------------------------------------------6--------------------------------------------------------------------------
+//DOM(Document Object Model) est une norme Web définie par le World Wide Web Consortium (W3C), DOM est pris en charge par la plupart des navigateurs. 
+	https://www.techopedia.com/definition/945/document-object-model-dom
+	JavaScript peut accéder à tous les éléments d'une page Web à l'aide de Document Object Model (DOM).
+	En utilisant DOM, JavaScript peut effectuer plusieurs tâches comme :
+
+		Créez de nouveaux éléments et attributs.
+		Manipulez et accédez aux éléments et attributs existants et supprimez même les éléments et attributs existants.
+		Réagissez aux événements existants.
+		Créez de nouveaux événements dans la page.
+	
+    Les DOM représente un document avec un arbre logique. Chaque branche de l'arbre se termine par un nœud , et chaque nœud contient objets. 		Les méthodes DOM permettent aux programmeurs d'accéder au arbre. En les utilisant, vous pouvez modifier le structure, le style ou le 		contenu. Les nœuds peuvent également avoir gestionnaires d'événements attaché à eux. Une fois qu'un événement est déclenché, les 		gestionnaires d'événements sont exécutés.
+
+//Représentation DOM
+	Comment est créé le DOM: le navigateur lie le code HTML et le transforme en noeud DOM.
+	"Nous pouvons accéder aux éléments dans le DOM: par ID, class, tag, et les query selectors.
+
+	https://www.digitalocean.com/community/tutorials/how-to-access-elements-in-the-dom
+	L'interface du document représente toute page Web chargée dans le navigateur et sert de point d'entrée dans le contenu de la page Web 			et c'est exactement l'arborescence DOM. L'arborescence DOM comprend des éléments tels que <body>et <table>, parmi beaucoup 			d'autres. Il fournit des fonctionnalités générales au document, comme la façon d'obtenir l'URL de la page et de créer de 			nouveaux éléments dans le document.
+	5 façons d'accéder aux éléments HTML dans le DOM - par ID, par classe, par nom de balise HTML et par sélecteur.	
+	"NB: La méthode que nous utiliserons pour obtenir un élément ou un groupe d'éléments dépendra de la prise en charge du navigateur et 			du nombre d'éléments que nous manipulerons. 	
+	🔔️Accéder aux éléments par ID :  textContent,innerText && innerHTML
+		Le moyen le plus simple d'accéder à un seul élément dans le DOM consiste à utiliser son ID unique . On peut saisir un élément 				par ID avec la getElementById()méthode de l'objet document.
+		Accéder à un élément par ID est un moyen efficace d'obtenir rapidement un élément dans le DOM. Cependant, "il présente des 				inconvénients; un ID doit toujours être unique à la page, et donc vous ne pourrez accéder qu'à un seul élément à la 				fois avec la getElementById()méthode". Si vous vouliez ajouter une fonction à de nombreux éléments de la page, votre 				code deviendrait rapidement répétitif.
+	🔔️Accéder aux éléments par classe
+		L' attribut class permet d'accéder à un ou plusieurs éléments spécifiques du DOM. Nous pouvons obtenir tous les éléments avec 				un nom de classe donné avec la méthode getElementsByClassName().
+		Avec getElementsByClassName() au lieu d'obtenir un seul élément, "nous avons un objet de type tableau d'éléments".
+		NB: Les tableaux JavaScript doivent être accessibles avec un numéro d'index. 
+	🔔️Accéder aux éléments par balise
+		Un moyen moins spécifique d'accéder à plusieurs éléments de la page serait par son nom de balise HTML. On accède à un élément 				par tag avec la méthode getElementsByTagName().
+	    La méthode getElementsByTagName de l'interface Document "renvoie une HTMLCollection d'éléments".
+	🔔️Query Selectors(Sélecteurs de requête)
+		L'utilisation des méthodes du sélecteur de requête est extrêmement puissante, car nous pouvons accéder à n'importe quel 			élément ou groupe d'éléments du DOM de la même manière que nous le ferions dans un fichier CSS.
+		1-Pour accéder à un seul élément, nous allons utiliser la méthode querySelector().
+			💥️Le sélecteur d'un id attribut est le symbole dièse ( #)
+		2-Dans le cas d'un sélecteur avec plusieurs éléments, comme une classe ou une balise, querySelector()renverra le premier 				élément qui correspond à la requête.Si aucune correspondance n'est trouvée, null est renvoyé. Nous pouvons utiliser la 				querySelectorAll()méthode pour collecter tous les éléments qui correspondent à une requête spécifique.
+			💥️Le sélecteur d'un class attribut est un point ou un point ( .)
+	  NB:Avec querySelector(), les valeurs séparées par des virgules fonctionnent comme un opérateur OU. Par exemple, querySelector('div, 			article')correspondra à div ou article , selon celui qui apparaît en premier dans le document. Avec querySelectorAll(), les 			valeurs séparées par des virgules fonctionnent comme un opérateur AND et querySelectorAll('div, article')correspondront à 			toutes les valeurs div et article dans le document.
+	    "La méthode Document querySelectorAll() renvoie une NodeList statique (non active)".
+
+	NB:::::::Enregistrez le fichier sous access.js et chargez-le dans le fichier HTML juste avant la fermeture de body balise .
+
+
+//Que sont les attributs DOM ?
+	Les attributs "sont des mots spéciaux utilisés dans la balise de début d'un élément HTML" pour contrôler le comportement de la balise 			ou fournir des informations supplémentaires sur la balise.
+	🔔️La "getAttribute()" méthode est utilisée pour obtenir la valeur actuelle de l'attribut d'un élément.
+		Si l'attribut donné n'existe pas, la valeur renvoyée sera soit null ou ""(la chaîne vide) 
+	🔔️La "setAttribute()" méthode est utilisée pour définir l'attribut de l'élément spécifié.
+		Si l'attribut existe déjà sur l'élément, la valeur est mise à jour. Sinon, un nouvel attribut est ajouté avec le nom et la 			valeur spécifiés.
+	🔔️La méthode "removeAttribute()" est utilisée pour supprimer un attribut de l'élément spécifié.
+
+//Manipulation du DOM
+	🔔️Styliser les éléments DOM      
+		Avec l'utilisation dynamique de JavaScript,nous pouvons également appliquer du style sur les éléments HTML pour modifier la 				présentation visuelle du HTML.
+	🔔️Ajout d'élément       "document.createElement()"
+		Nous pouvons explicitement créer de nouveaux éléments dans un document HTML, en utilisant la méthode document.createElement().
+		"Cette méthode crée un nouvel élément mais ne l'ajoute pas au DOM".
+	🔔️Obtenir ou définir du contenu HTML sur DOM innerHTML
+		Nous pouvons obtenir ou définir facilement le contenu des éléments HTML avec la propriété innerHTML.
+	🔔️Supprimer l'élément     "removeChild()"
+		De même, nous pouvons utiliser la méthode removeChild() pour supprimer un nœud enfant du DOM.
+		Cette méthode renvoie également le nœud supprimé.
+//Evenement
+	🔔️Ajouter des événements
+	https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
+	"addEventListener()"
+	NB: les événements peuvent différer dans différents environnements(langage) de programmation.
+	-Les événements sont des actions qui se produisent à la suite de l'action de l'utilisateur ou à la suite d'un changement d'état des 			éléments d'un arbre DOM. Par exemple : click, load, focusin, focusout.
+	-"Chaque événement disponible possède un gestionnaire d'événements(parfois appelés écouteurs d'événements)" , qui est un bloc de code 			(généralement une fonction JavaScript que nous créons en tant que programmeur) qui s'exécute lorsque l'événement se déclenche.
+	  NB:Un gestionnaire d'événements(parfois appelés écouteurs d'événements)
+	  	L'écouteur écoute l'événement qui se produit et le gestionnaire est le code qui est exécuté en réponse à son apparition.
+	  Remarque : les événements Web ne font pas partie du langage JavaScript de base — ils sont définis dans le cadre des API intégrées au 			navigateur.
+	-"Il existe trois façons d'attribuer une fonction à un événement donné".
+
+	🔔️Supprimer des événements
+		La méthode "removeEventListener()" détache un écouteur d'événement qui a été précédemment ajouté avec la méthode 				"addEventListener()" de l'événement qu'il écoute .
+		NB: addEventListener() prend 2 à 3 parametres. 
+			1er: type d'evenement 2eme: fonction executée lorsq l'event est declenché
+	🔔️Types d'événements(événements de souris-événements clavier-événements de formulaire-événements de fenêtre)
+	mouse events (MouseEvent): mousedown, mouseup, click, dblclick, mousemove, mouseover, mousewheel, mouseout, contextmenu
+	keyboard events (KeyboardEvent): keydown, keypress, keyup
+	form events: focus, blur, change, submit
+	window events: scroll, resize, hashchange, load, unload
+	☔️---------------------Recherche perso sur les gestionnaires d'event---------------☔️
+		 les bases de addEventListener
+		 Bullage/Capture d'événements
+		 Arrêt de la propagation des événements
+		 Exécuter l'événement une seule fois
+	 	 removeEventListener
+		 Délégation événementielle
+		 Autre
+
+
+	☔️--------------------TD : JavaScript Shopping Cart(Panier d'achat) Code With Clinton-------------------☔️
+	1-Recensser les bouttons ki m permettent d'ajouter d'article au panier(un groupe de button )
+		-Chercher à accéder à chaq button(en parcourant ce grpe de button puis en accédant individuellement chaq button)
+		Rmrq: Ils ont tous : class="btn btn-primary"
+		-Ensuite ajouter une fction à chacun des button(ajout d'un event de click) de facon qu'à chaq fois q j cliq sur l'un des 			buttons, la fction particulière(q j nomme ici *addToCart*) va s'executer
+		-Ds la fction, creer une variable qui fait reference à l'element sur lequel le cliq est fait.
+		-Pour faire la diff entre les click, je vais récuperer le nom, le prix d chaq button de maniere particuliere à chaq fois
+		-Nous allons identifier l'element parent, l'elemnt grd parent dans leqel se trouve chaque button.
+	2-Ds mon javascript, je vais créer des cartes en faisant la replique de ces cartes qui sont constituées à partir de HTML.(i.e: le 			contenu de  <tr> qi s trouve à la fin de <table>	
+		-Je le mets comme un container d'element
+		-Ensuite j vais placer les elements qui sont contenu ds <tr> dans mon container que j'ai créé en Js
+		-Je vais placer le itemName,itemPrice ,itemImage   à l'intérieur de mon HTML precedemment créé(mettre des varibles ds du HTML)
+		-Ajouter ce conteneur d'elements à l'element parent (tbody ds c cas)
+		-Recuperons tt d'abord le conteneur prncipal tbody
+	3-Travailler sur quantity
+		-Aller chercher ds mon HTML, la partie qui concerne Quantity
+		-Chercher à obtenir les elements parents de l'element ou se trouve  quantity
+
+	☔️-------TD : JavaScript Shopping Cart(Panier d'achat) Développement Web simplifié------------☔️
+	1-Tjrs s'assurer q le contenu du HTML est chargé avnt q notre code js s'execute.
+	   Step1	   
+		-Au tt debut de mon fichier JS, Verifier si le document HTML est tjrs en cours de chargement
+		-Si c'est le cas, ajouter un ecouteur d'evenement à notre document  et ecouter le contenu de l'evenement 'DOMContentLoaded'
+		-De ce fait, 'DOMContentLoaded' s declenche des q possible au fur et à mesure q la page se charge 
+		-Créer cette fction pour le cas else , y mettre le code de depart de mon js
+		-De cette facon,mon code pour connecter les buttons fonctionneront automatiqm meme si la page n'est pas déjà chargée. Car il
+			attendra simplm l'evenm 'DOMContentLoaded' avant d'appeler la fction 'ready'
+	   Step2
+		-Créer une fction
+	2-S'assurer q mes buttons supprime reellement les articles de mon panier.
+	 	-Selectionner ces buttons
+		-Leur ajouter un evenement pour leur dire qd celà est cliqué, faire qlqchose.
+		-Pour q ma fction appelée puis réellement supprimer l'article de mon panier lorsq le click sur le button se produit,
+			.Mon ecouteur d'evenement doit tjrs renvoyer un objet 'event' à l'interieur de la fction qu'il appelle
+			.Et ce objet a une proprieté appelée 'target' q ns allons utiliser.
+			  NB: target est le button sur lequel le click est fait
+			.Obtenir ligne du panier contenant les buttons
+				-Identifions le vrai parent du l'objet(taget)
+				-Trouvons la route menant à la ligne correspondante(dans le HTML) à l'ensemble qui doit etre supprimé
+	3-Ecrire un script afin de maj le total de notre panier(en fction des articles presents ds le panier).
+		-Appeler ma nvelle fction à l'interieur de la boucle nous permettant de recuperer la target
+		-Ds ma nvelle fction:
+			.Parcourir chaq ligne de mon panier
+				-En examinant le HTML, nous devons identifier l'element qi enveloppe toute les lignes du panier, le récuperer
+				 NB:Mais nous voulons obtenir que le tout  premier des articles(ligne) du panier 
+				-Une fois les lignes du panier recupérées, boucler sur elles.
+				-Revenir Sur le HTML,identifier l'element qui contient le montant. Et prendre le tout premier
+				-Revenir Sur le HTML,identifier l'element qui contient le quantity. Et prendre le tout premier
+				-Chercher à obtenir les informations réelles de ces elements.
+					.Obtenir le texte interne de ces elements à l'aide de 'innerText'
+					.Remplacer tout les  $ par rien afin de supprimer les $ et le convertir en Float pour pouvoir clculer.
+					.Obtenir la valeur de 'quantity': Il s'agit d'un input donc on peut obtenir le value. 
+			.Trouver le prix et le multiplier par "quantity" puis additionner celà pr chacune de mes lignes
+			.Afficher le total vers le bas
+				NB: Nous devons faire le calcul total
+				-Identifier l'element qui affiche le totalAmount ds le HTML, recuperer le tout premier element
+				-Definir le texte qui sera à l'interieur de cet element recuperé à l'aide de 'innerText'
+	4-Pour les articles presents ds le panier, s'assurer que l'augumentation de la quantity impacte le total
+		-Identifier ds le HTML, les elemnts qui contient la quantite
+		-Selectionner ces elements
+		-Boucler sur le tableau de ce type d'elemnts recuperé
+		-Ajouter un ecouteur d'event sur chaque element, afin d'eccouter à chaq fois q l'input de l'elem change d valeur.
+		-Choses à faire ds la fonction executée lorsq l'event declenché :
+			.Obtenir cet element de quantité 
+			.Verifier si la valeur de cette 'input' recuperé est une valeur valide:
+				-Verifier si c'est vraiment un nombre car si la personne le supprime, ce ne serait plus un nbre
+				-Si c'est un nbre, ns assurer q ce n'est pas non plus un nombre negatif.
+				-Si quantity pas un nbre ou <= 0, definir sa valeur 1 
+		-Maj la quantity . 
+			NB: Exploiter la fction d'update utilisee lors de la maj d la quantity utilisée lors de la suppresion
+		-Arrondir le total à deux decimales, pour compenser les nbre flottants un peu bizarre
+	5-Traiter le button ajouter situé au nivo de chaq article
+		-Identifier le button en qestion ds notre HTML
+		-Selectionner ces elements(ces buttons )
+		-Boucler sur le tableau de ce type d'elemnts recuperé
+		-Ajouter un ecouteur d'event sur chaque element, afin d'eccouter à chaq fois q l button est cliqué.
+		-Créer la fonction pour ajouter l'article lié au button au panier
+		-Gerons les elements concernés par le click à ajouter (img,nom,prix,quantité,le button de suppression).
+			.Ds HTML, identifier les elemnents concernés.
+			.Recuperer le parent principal qui enveloppe tout un article(button addToCart y compris).
+			.NB: pour l'img, ns voulons récuperer son attribut src
+		-Ajouter une ligne à notre panier(j vais créer une nouvelle methode pour)
+			.Y créer un element à l'aide de 'createElement()' ki permet d créer un elem HTML d n'importe qel type.
+			.Identifier ds HTML, la ligne qui enveoppe toutes les lignes du panier
+			.Utiliser la methode d'ajout '' qui va ajouter cette ligne de panier tout à la fin de nos articles de panier.
+			.Ajouter le meme style utilisé pour chaq ligne du panier.
+				-Prendre directm ds l code HTML correspondant à une ligne pour generer une execution d panier.
+				-Pour avoir le meme style q les autres lignes,
+		-Eviter la repitition du meme type d'article sur plusieurs lignes:
+			.Recuperer l'ens des nom des articles dejà presents dans notre panier
+			.Boucler dessus
+			.Si le title correspond à l'un des titles du panier, afficher une alerte
+			.S'assurer de n pas continuer le reste du traitement(l'execution) du reste du code en retournant à la ligne ou la 					methode de verification est appelee.
+		-S'appuyer sur la methode d'ajout existante pour maj le total
+		-Pour q le button d suppression marche:
+			.ajouter un ecouteur d'evenement à ce button et exploiter la methode de suppresion dejà existante
+		
+		
+
+//Validation du formulaire
+https://www.youtube.com/watch?v=In0nB0ABaUk&ab_channel=WebDevSimplified
+Le processus de validation du formulaire se compose généralement de deux parties : 
+	-la validation des champs obligatoires qui est effectuée pour s'assurer que tous les champs obligatoires sont remplis, et 
+	-la validation du format des données qui est effectuée pour s'assurer que le type et le format des données saisies dans le formulaire 			sont valides.
+	
+---------------------------------------------------------------------7--------------------------------------------------------------------------
+//Git et GitHub	
+  //1- Git
+	https://git-scm.com/
+	NB: Git est l'un des nombreux piliers importants sur lesquels repose la conception Web.
+	"Qu'est-ce que VCS ?
+		Un système de contrôle de version est un outil logiciel qui aide les équipes de développeurs à suivre et à gérer les 				modifications du code source au fil du temps.
+		Sans VCS, nous sommes tenté de conserver plusieurs copies de code sur notre ordinateur. C'est dangereux car il est facile pour 			un fichier d'être corrompu ou supprimé et nous sommes susceptible de perdre des mois voire des années de travail.
+	"Git est un VCS distribué gratuit et open source
+	Git est essentiel lors de la collaboration avec d'autres développeurs pour s'assurer qu'il n'y a pas de conflits de code entre eux et 			que les "instantanés" précédents du code peuvent être revus si nécessaire.
+	Git:est un système de contrôle de version conçu pour tout gérer, des petits aux très grands projets, avec rapidité et efficacité.
+	    Avec des fonctionnalités telles que, git surclasse les outils SCM tels que Subversion, CVS, Perforce et ClearCase:
+		. cheap local branching :  création de branches locales,
+		. convenient staging areas :  zones de transit pratiques, and 
+		. multiple workflows :  des flux de travail multiples ..
+	"Les avantages de Git par rapport aux autres systèmes de contrôle de source.
+		.La fonctionnalité Git qui le distingue vraiment de presque tous les autres SCM est son branching model(modèle de branchement).
+		. Git permet et vous encourage à avoir plusieurs branches locales qui peuvent être entièrement indépendantes les unes des 				autres.
+		. La création, la fusion et la suppression de ces lignes de développement prennent quelques secondes.
+
+	Avoir une architecture distribuée, Git est un exemple de DVCS (d'où le système de contrôle de version distribué). Plutôt que de 		n'avoir qu'une seule place pour le plein historique des versions du logiciel comme il est courant dans les systèmes de 			contrôle de version autrefois populaires comme CVS ou Subversion(également connu sous le nom de SVN), dans Git, la copie de 			travail du code de chaque développeur est également un dépôt qui peut contenir l'historique complet de tous les changements.   			En plus d'être distribué, Git a été conçu avec performance, la sécurité et la flexibilité à l'esprit.
+	"Installation de Git
+		https://dzone.com/articles/top-20-git-commands-with-examples
+		 . Il faut l'installer et le configurer avant de pouvoir commencer à l'utiliser pour gérer notre code.
+		 . Il est important de garder Git à jour, comme tous les autres logiciels de notre machine. 
+		 . Les mises à jour nous protègent des failles de sécurité, corrigent les bogues et nous donnent accès à de nouvelles 				fonctionnalités.
+	    
+		Linux:
+		Sur le terminal, exécutez simplement "sudo apt install git-all".
+			//Ensuite , "initialiser" ds un directory avec "git init" un référentiel avant de pouvoir commencer à l'utiliser:
+			.Accédez au dossier souhaité à l'aide du terminal (invite cmd).
+			.Pour initialiser un dépôt, il suffit de lancer :
+				"git init"
+				NB: Cette commande vient de créer un dossier caché appelé .git, où toute la magie opère.
+			//Ajouter et valider des fichiers
+				cd /home/abdoulazizallassani/azizgit
+				touch testgitfile
+			//Vérifiez l'état de votre référentiel
+				"git status"
+			//Ajouter des fichiers pour Git to Track
+			Nous devons ajouter des fichiers spécifiquement à Git afin de dire à Git de les suivre à l'aide de la commande « add ».
+			Après avoir fait "git add". Git ajoutera tous les fichiers du référentiel à une zone intermédiaire appelée 					"zone de transit" .
+			Nous pouvons également ajouter ce que nous voulons simplement en exécutant "git add myFileName" . 
+			//Suppression de fichiers
+				Dire à Git d'arrêter de suivre certains fichiers .
+				NB: "git rm" commande ne  supprimera pas seulement de Git le fichier, mais le supprimera également de notre 						système fichiers local
+				Pour dire à Git d'arrêter de suivre un fichier tout en le conservant dans notre système local, exécutez la 					commande :
+	 				"git rm --cached [file_name]"
+			//S'engager dans des changements
+				Une fois que nous avons mis en scène nos fichiers, nous pouvons les valider dans Git.
+				Affecter un message de validation à chaque validation, que nous pouvons transmettre avec le préfixe -m.
+					"git commit -m 'first commit"
+		//NB: git init  /git add . /git status  /git commit -m 'first commit'
+	"Files status
+		https://git-scm.com/docs/git-config/2.15.4
+		Git voit chaque fichier de notre copie de travail comme l'une des trois choses suivantes :
+			. Tracked
+				Un fichier qui a été précédemment mis en scène ou validé.
+			. Untracked
+				Un fichier qui n'a pas été transféré ou validé .
+			. Ignored(Ignoré)
+				Un fichier qu'il a été explicitement demandé à Git d'ignorer.
+			NB: 	. Les fichiers ignorés sont généralement des artefacts construits et 
+				. Des fichiers générés par la machine qui peuvent être dérivés de la source de votre référentiel ou
+				. Des fichiers qui ne devraient pas être validés autrement.
+		PS : . Si nous avons un fichier que nous ne voulons pas suivre, nous le mettons simplement à l'intérieur du fichier 				".gitignore" .
+		     . Le fichier ".gitignore" contient une liste de configurations qui affectent le comportement des commandes git, donc pour 				le manipuler, nous utilisons la commande "git config <configuration>".
+			     . Par conséquent, pour modifier le nom et l'adresse e-mail utilisés par Git pour identifier l'utilisateur, nous 					exécutons la commande suivante (PS. changez VOTRE.NOM et VOTRE.EMAIL avec nos propres valeurs.)
+
+					git config --global user.name "YOUR NAME"
+					git config --global user.email "YOUR EMAIL"
+	"Git alias
+		https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
+		Pour utiliser un raccourci, afin d'eviter de se retrouverer à taper des gitcommandes encore et encore. et c'est un 
+				"fichier alias"	
+		Les alias aident à rendre notre expérience Git plus simple, plus facile et plus familière.
+		Pour créer un fichier temporaire alias, qui durera tant que votre session de terminal est ouverte, vous pouvez taper :
+			"git config alias.KEYBOARD_SHORTCUT COMMAND"
+			e.g: si nous voulions taper "git stet" le faire fonctionner comme "git status", nous taperions 
+				"git config alias.st status". Maintenant, nous pouvons taper "git stet" avoir le même résultat que si nous 					tapions "git status".
+			NB: Si nous souhaitions que nous fassions "alias" partie de notre configuration globale, ajoutons la "--global" 				commande après "git config". e.g, pour créer un alias git à "git init" globalement, nous devons taper 
+				"git config --global alias.i init".
+
+	//Comment configurer le nom d'utilisateur et l'adresse e-mail de Git
+		https://linuxize.com/post/how-to-configure-git-username-and-email/
+
+
+   //2- What is GitHub?
+	https://github.com/
+	Est une plateforme d'hébergement de code pour le contrôle de version et la collaboration. 
+	Il nous permet, à nous et à d'autres, de travailler ensemble sur des projets de n'importe où.
+	Git est un système de contrôle de version tandis que GitHub est une plate-forme en ligne pour l'hébergement et le partage de code, de 			fichiers texte et de formats de fichiers plus complexes.
+     //Créer un projet et faire une pull request sur GitHub en 5 étapes :
+	"Étape 1. Create a remote Repository - Créer un référentiel distant
+		Un référentiel est généralement utilisé pour organiser un seul projet.
+		Les référentiels peuvent contenir tout ce dont notre projet a besoin.
+		"Recommandons" :inclure un fichier README ou un fichier contenant des informations sur votre projet.
+
+	"Step 2. Create a Branch - Créer une succursale
+		Branching(Le branchement) est le moyen de travailler sur différentes versions d'un "repository" en même temps.
+		NB: 	. Par défaut, notre "repository" a une branche nommée "main" qui est considérée comme la branche définitive.
+			. Lorsque nous créons une branche à partir de la "main branche", nous faisons une copie, ou un instantané, de "main" 					ce qu'elle était à ce moment-là. 
+			. Si quelqu'un d'autre a apporté des modifications à la "main branche" pendant que nous travaillions sur notre 					branche, nous pouvons récupérer ces mises à jour.
+
+	"Step 3. Make and commit changes - Apportez et validez les modifications
+		Sur GitHub, les modifications enregistrées sont appelées "commits" .
+
+	"Step 4. Open a Pull Request - Ouvrir une demande de tirage
+		Les "Pull Requests" sont au cœur de la collaboration sur GitHub.
+		Lorsque nous ouvrons une pull request , nous proposons nos modifications et demandons à quelqu'un de réviser et d'extraire 				notre contribution et de les fusionner dans sa branche.
+		Nous pouvons même ouvrir des pull request dans notre propre référentiel et les fusionner nous-même.
+	
+	"Step 5. Merge your Pull Request - Fusionnez votre Pull Request
+		//Travailler avec notre référentiel distant sur GitHub ou GitHub Enterprise
+		https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/working-with-your-remote-repository-on-github-or-github-enterprise
+		Après avoir créé un référentiel dans GitHub, 
+			nous devons ajouter notre code local (après les commits) au référentiel distant.
+				.Tout d'abord, nous devons attacher l'adresse du dépôt GitHub à notre projet local, simplement en exécutant: 						"git remote add origin OUR_REPO_URL"
+				. Pour transférer les fichiers locaux vers l'hôte distant, nous devons exécuter cette commande 
+					"git push origin master"
+
+
+
+    //GitHub Fork :Fourchette  
+	Comprendre le flux GitHub:  https://guides.github.com/introduction/flow/
+	.Lorsque nous collaborons avec d'autres, nous ne pouvons pas pousser directement vers le référentiel d'origine
+		Donc, la chose logique à faire est de faire une copie du référentiel distant de quelqu'un d'autre et 
+		De s'assurer qu'il se trouve sous notre nom d'utilisateur afin que nous puissions y envoyer du code.
+		 "Cela garantit que nos expérimentations avec le référentiel n'affectent pas la version originale."
+		NB: "forking" est strictement une fonctionnalité de GitHub et qu'il n'est en aucun cas lié à Git.
+			C'est simplement un moyen de créer notre propre copie d'un référentiel sur notre compte où 
+			Nous avons la permission de pousser notre code vers GitHub.
+	.Supposons maintenant que nous collaborons avec une organisation sur GitHub (d'où nous avons créé le référentiel) et que 
+		Nous souhaitons fusionner nos modifications avec le référentiel d'origine que nous avons créé (rappelons-nous que nous ne 				pouvons pas simplement y accéder, car nous n'avons pas autorisation de le faire). 
+		Nous pouvons émettre une "pull request" et celui qui peut accorder l'autorisation peut soit la fusionner, soit la rejeter.
+
+
+		Resumé : 
+			UNE "fork" est une copie d'un "repository". Forker un référentiel nous permet d'expérimenter librement sans affecter 				le projet d'origine. Si vous avez fait "changements" et que nous souhaitons les ajouter et contribuer au projet, il 				nous suffit d'émettre un "pull request". C'est ici que nous envoyons les modifications proposées au propriétaire du 				projet. Après examen de notre demande, il peut soit "merge" dans le "repository master" ou rejetez notre demande.
+
+---------------------------------------------------------------------8--------------------------------------------------------------------------
+
+//Algorithme :
+	"Un algorithme est un plan ou des instructions étape par étape pour résoudre un problème.
+
+	Nous écrivons des algorithmes pour:
+
+		Développer la logique de programmation.
+		Restez concentré sur la logique uniquement.
+		Vérifier la complexité du programme
+
+	Il faut répondre aux questions suivantes avant de commencer à écrire l'algorithme :
+		1. Quel est le problème à résoudre ? un algorithme qui lit une phrase, qui se termine par un point, caractère par caractère et de déterminer :
+		La longueur de la phrase
+		Le nombre de voyelles dans la phrase.
+		2. Quelles sont les contraintes en vue
+			Comment trouver La longueur de la phrase (le nombre de caractères)?
+			Le nombre de mots dans la phrase :
+				Comment trouver les espaces dans une phrase
+				Comment  decouper une phrase en fonction de l'espace. Compter le nbre d'espace
+			Le nombre de voyelles dans la phrase:
+				Comment reconnaitre les voyelles
+				Compter le nombre de voyelle dans la phrase
+		3. Quelle sera l'entrée 
+			String
+		4. Quel sera l'output
+			number
+		5. Quelle est la solution ?  
+//Type de variable de base commun à tout les langages de programmation
+	NB: ne peuvent contenir qu'1 seule valeur à la fois("variables scaliares").
+	INTEGER, FLOAT,BOOLEEN,CHAR,STRING.
+		 Une variable est un emplacement de stockage pour un seul type de données, qui peut être utilisé pour stocker une valeur et 				utilisé pour récupérer une valeur.
+		//Le nom ou l'identifiant de la variable
+			Le nom doit commencer par une lettre (majuscule ou minuscule) ou le symbole de soulignement '_'.
+			Les caractères suivants peuvent également être des nombres.
+			Nous ne pouvons pas utiliser le même nom qu'un mot réservé à l'algorithme, tel que var, begin ,end…
+			Ces exemples ne sont pas légaux :
+				3DPointClass // les identifiants ne peuvent pas commencer par un chiffre
+				hollywood@vine // @ n'est pas une lettre, un chiffre ou un _
+				*_coffee // * n'est pas une lettre, un chiffre ou un _
+				var // var est un mot réservé
+		//Assignment -  L'affectation d'une valeur à une variable
+			L'affectation d'une valeur à une variable peut se faire de quatre manières :
+				Nom_de_variable := valeur
+				Name_of_variable := name_of_other_varibale
+				Nom_de_variable := expression
+				Nom_de_variable := nom_de_fonction
+		//Types de variables
+			Boolean,Integer,Integer,Char,String
+		//Compatibilité des types de variables
+			Lorsque nous affectons une valeur à une variable, les deux types doivent être compatibles entre eux.
+			NB: cette règle reste vraie entre les variables elles-mêmes. Seule l'exception de l'affectation d'une variable integer 					à une variable float.
+					c-à-d :  f := i; // correct
+   						 i := f; // wrong
+//Exécuter une séquence d'instructions
+			Il existe trois blocs  de base (constructions) à utiliser lors de la conception d'un algorithme : 					sequencing, selection, iteration - "séquençage, sélection, itération"
+			1- Séquençage 
+				le modèle de séquençage consiste à donner à l'ordinateur la bonne séquence d'instructions à suivre.
+				NB: un ordinateur ne peut exécuter que deux catégories d'instructions :
+					. Opérations arithmétiques : addition, multiplication, etc...
+					. Opérations logiques : dans ce type d'instructions l'ordinateur peut exécuter deux autres 							sous-catégories qui sont :
+						Booléennes : ET, OU, NON , etc ...
+						Relationnel : =,>,<=, etc...
+				//Instructions arithmétiques
+					 l'opération arithmétique c'est une manipulation de constantes ou de variables.
+				//Instructions logiques
+					Ces instructions effectuent des opérations logiques sur les données, telles que la comparaison, le 							complément et, ou...
+			2- sélection
+				Consiste est un ensemble d'instructions qui sont exécutées (réalisées) les unes après les autres. 
+				La sélection nous permet d'inclure plus d'un chemin dans un algorithme.
+				la sélection est généralement représentée par les instructions "IF , THEN et ELSE" .
+					"IF" représente la question
+					"THEN" indique ce qu'il faut faire si la réponse à la question est vraie
+					"ELSE" indique ce qu'il faut faire si la réponse à la question est fausse
+
+			3- itération
+				L'itération dans la programmation signifie répéter des étapes, ou des instructions, encore et encore.
+				C'est ce qu'on appelle souvent une " boucle " .
+				"L'itération permet de simplifier les algorithmes en déclarant que certaines étapes se répéteront jusqu'à 						indication contraire. 
+				Cela rend la conception d'algorithmes plus rapide et plus simple car ils n'ont pas besoin d'inclure de 						nombreuses étapes inutiles.
+				Les boucles :   "WHILE-DO"  / "REPEAT-UNTIL" permet au code d'être exécuté de manière répétée en fonction 									d'une condition booléenne donnée.
+						"FOR-DO" permet d'écrire une boucle qui est exécutée un certain nombre de fois.
+				E.g:
+					-WHILE-DO       	WHILE(i<= 10)
+					-REPEAT-UNTIL	 	UNTIL(i>10)
+					-
+
+---------------------------------------------------------------------9--------------------------------------------------------------------------
+//structure de données linéaire (Array,Matrix,String,Linked,List,stacks,Queues,Hash tables) : Type de variable qui peuvent contenir +sieurs valeurs à la fois.
+	Une structure de données linéaire est l'endroit où les éléments de données sont disposés de manière séquentielle ou linéaire.
+	Dans ce genre de structure, un élément est attaché à son précédent et au suivant adjacent.
+	"NB: la mémoire de l'ordinateur est agencée de manière linéaire."
+	
+	1. Arrays
+		Doit contenir les valeurs d meme type("INTEGER ou FLOAT ou BOOLEEN ou CHAR ou STRING")
+		Un tableau est une collection d'éléments stockés dans des emplacements de mémoire contigus. "L'idée est de stocker plusieurs 				éléments du même type ensemble". Cela facilite le calcul de la position de chaque élément en ajoutant simplement un 					décalage à une valeur de base.
+		//Pourquoi avons-nous besoin de tableaux ?
+			. Les tableaux sont les meilleurs pour stocker plusieurs valeurs dans une seule variable
+			. Les tableaux sont plus efficaces pour traiter de nombreuses valeurs facilement et rapidement
+           		. Le tri et la recherche des valeurs sont plus faciles dans les tableaux
+		//tableau unidimensionnel
+			"array_name : ARRAY_OF type[length];"
+		//Qlq manipulations:
+			-insérer les éléments directement dans le tableau.
+			-insertion d'éléments dans un tableau
+			-rechercher un élément dans un tableau
+			-supprimer un élément d'un tableau.
+	2. Matrice(tableau multidimensionnel = 2 tableaux unidimensionnels)
+			Nb: "Un tableau à deux dimensions peut être irrégulier (ses tableaux peuvent tous être de longueurs différentes)"
+			"matrix_name : ARRAY_OF type[nb_line][nb_column];"
+			NB: L'initialisation des tableaux à deux dimensions est utile car elle masque plus de code que pour les tableaux à une 					dimension.
+	3. String
+		"Un String est un tableau de type de données caractère".
+			Declaration:  "str_name : STRING[size];"
+			NB: size est utilisé pour définir la longueur de la chaîne, c'est-à-dire le nombre de caractères que les chaînes 					stockeront.
+			String peut être initialisé de diverses manieres:
+			str : STRING[] := "GoMyCode";
+			str : STRING[50] := "GoMyCode";
+			str : STRING[] := {'G','o','M','y','C','o','d','e'};
+			Il existe de nombreuses fonctions que nous utilisons directement avec String telles que "Concat, ToLower, ToString, 					ToInteger, ToFloat".
+		//Qu'est-ce qu'une structure 
+			1. Une structure est un type de données défini par l'utilisateur. 
+			2. Une structure crée un type de données qui peut être utilisé pour regrouper des éléments de types éventuellement 					différents en un seul type.
+
+				    struct_name :       STRUCT
+				        field_name : type;
+				        field_name : type;
+				    END_STRUCT
+			3. Initialistaion
+				Les champs de structure ne peuvent pas être initialisés dans la déclaration.
+			4. Comment accéder aux éléments de structure ?
+				Les champs de structure sont accessibles à l'aide de l'opérateur point (.)
+					// person is a variable of the Person struct
+					    person.age; // age is an integer.
+					    person.address.street; // address is a struct, and its field
+					// street is a string.
+			5. Qu'est-ce qu'un tableau de structures ?
+				ALGORITHM array_struct_exp
+				VAR
+				    Point : STRUCT
+						x : INTEGER;
+						y : INTEGER;
+					    END_STRUCT
+				    arr : ARRAY_OF Point[10];
+				BEGIN
+				    arr[0].x := 10;
+				    arr[0].y := 20;
+
+				    Write(arr[0].x, arr[0].y);
+				END
+	4. Stacks and Queues - Piles et files d'attente(sont des structure de données  abstraite)
+		1. Stacks
+			NB: 	Structure LIFO(À un moment donné, nous ne pouvons accéder qu'à l'élément supérieur d'une pile.)
+				LIFO signifie dernier entré, premier sorti.
+			"Opérations de base Stacks
+
+				push() - Pousser (stocker) un élément sur la pile.
+				pop() - Supprimer (accéder) à un élément de la pile.
+				peek() - récupère l'élément de données supérieur de la pile, sans le supprimer.
+				isEmpty() - vérifie si la pile est vide.
+		2.Queues
+			Contrairement aux piles, une file d'attente est ouverte à ses deux extrémités. 
+			Une extrémité est toujours utilisée pour insérer des données (mise en file d'attente) et l'autre est utilisée pour 					supprimer des données (défilement).
+			La file d'attente suit la méthodologie FIFO (First-In-First-Out), c'est-à-dire que l'élément de données stocké en 					premier sera accédé en premier.
+			"Opérations de base Queues
+
+				enqueue() - ajoute (stocke) un élément à la file d'attente.
+				dequeue() - supprimer (accéder) à un élément de la file d'attente.
+				peek() - Obtient l'élément au début de la file d'attente sans le supprimer.
+				isEmpty() - Vérifie si la file d'attente est vide.
+
+	5. Hash Tables (object en JS / HashMap en Java)
+		Est une structure de données qui stocke les données de manière associative.
+		Dans une table de hachage, les données sont stockées dans un format de tableau, où chaque valeur de données a sa propre valeur 				d'index unique.
+		L'accès aux données devient très rapide si l'on connaît l'index des données souhaitées.
+		Le hachage est une technique permettant de convertir une plage de valeurs de clé en une plage d'index d'un tableau.
+		opérations principales de base d'une table de hachage.
+
+				Rechercher
+				Insérer
+				Supprimer
+		"NB: Ces operations(Rechercher,Insérer) st tres rapides Hash Tables". 
+	   //Manipulation de Hash Tables
+		"NB: Si nous travaillons avec le type de données primitif (String, Integer,...), nous n'avons pas besoin d'implémenter la 				fonction de hachage. Il va être généré automatiquement.
+		-E.g: Algorithme qui renvoie le premier caractère non répété.
+
+	6. Linked List - liste chaînée(est une structure de données dynamique).
+		NB: Dans la liste chaînée, chaque nœud contient au moins deux champs. un pour " pointé vers le noeud
+		Une liste chaînée est une séquence de structures de données, qui sont reliées entre elles par des liens.
+		On utilise "Linked List" au lieu d'un "Array", quand on ne connaît pas a priori le nombre d'éléments à stocker.
+		Termes importants pour comprendre le concept de liste chaînée: "Data - Next - LinkedList"
+
+		  1. Données - Chaque nœud d'une liste chaînée peut stocker des données de n'importe quel type (Simple, Struct ou 				autres données).
+		  2. Suivant - Chaque lien d'une liste chaînée contient un lien vers le lien suivant appelé Suivant.
+		  3. LinkedList - Une liste liée contient le lien de connexion au premier lien appelé First.
+		//Comment allouer de la mémoire ?
+			Pour travailler avec l'adresse mémoire, nous utilisons un type spécial appelé "Pointer". 
+			Les pointeurs peuvent stocker une adresse mémoire pour un type spécifique. Nous utilisons '^' pour indiquer un 					pointeur.
+			"Nb: Linked List n'est pas un type, nous pouvons le déclarer en utilisant struct, nous choisissons ensuite le type de 					données à l'intérieur de la" struct.
+
+				    List :  STRUCT
+					data : INTEGER;
+					next : ^List;
+				    END_STRUCT
+
+			"NB: Fonctions utilisées pour manipuler la mémoire avec une liste chaînée : "create() free()"
+		//Manipulation de Linked List
+			
+
+//Résumé:
+	Au cours de cette super compétence, nous avons vu ce que nous avons appelé la structure statique :
+	Le tableau et la matrice (ils sont appelés ainsi en raison de leur longueur statique),
+	La chaîne qui est un tableau de caractères avec des méthodes spécifiques (comme concat),
+	La structure (Struct) qui nous donne la possibilité de créer notre propre structure.
+	La structure de données abstraite comme les piles et les files d'attente.
+	La table de hachage qui fait référence à un dictionnaire ou à une carte dans les langages de programmation, qui est utilisée pour 			stocker une carte clé-valeur.
+	La liste chaînée qui est une structure de données dynamique.
+
+---------------------------------------------------------------------10--------------------------------------------------------------------------
+//La programmation procédurale
+	De milliers de lignes de code peuvent être générer, face à la résolution d'un problème complexe.
+	"Solution": 
+		Idée de programmation procédurale :
+		Divisez le problème complexe en sous-problèmes moins complexes et écrire chacun d'eux séparément dans notre environnement 				approprié.
+	"Avantages":
+		Clarté de l'algorithme
+		Un algorithme plus lisible
+		Facilité d'entretien
+		Réutilisation de sous-algorithmes
+	L'idée derrière la programmation procédurale est de diviser le complexe Problème en moins complexe sous-problèmes et écrir chacun 			d'eux séparément dans son propre environnement.
+//sous-algorithmes
+	2 types de sous-algorithmes :
+		Procédure
+		Fonction
+	la communication entre deux sous-algorithmes se fera via des paramètres (variables). Chaque sous-algorithme peut avoir des paramètres 			d'entrée et peut donner des paramètres de sortie.
+		E.g: Read(), Write(), push() sont des procédures prédéfinies (également appelées intégrées).
+		Si le programmeur crée les siens, ils sont personnalisés ou définis par l'utilisateur.
+	//Diff entre procédure et fonction
+		Une procédure exécute 1 tâche et retourne pas d valeur, tandis q'une fonction produit des informations puis retourne 1 et 1 				seule valeur.
+	//Description de la procédure :
+		PROCEDURE procedure_name(List_parameters)
+		VAR
+		    set_declarations
+		BEGIN
+		    Procedure’s body (set_instructions)
+		END
+
+	//Description of Function:
+		FUNCTION function_name(args) : return_type
+		VAR
+		    set_declarations
+		BEGIN
+		    set_instructions
+		    RETURN value ;
+		END
+	NB: Ces ééléments ( Fonctions, procédures, paramètres, arguments, variables et constantes) peuvent recevoir un identifiant.
+	//Paramètres
+		Nous permettent de transmettre des informations ou des instructions dans des fonctions et des procédures.
+		Les valeurs passées en paramètres sont appelées arguments.
+		NB: Nous pouvons avoir une fonction/procédure sans paramètres
+	//scope - Portée des variables
+		La portée fait référence à l'endroit où une fonction, une procédure, une variable ou une constante peut être utilisée. Ils 				peuvent être locaux ou mondiaux.
+		Une variable globale est déclarée de manière à la rendre disponible pour toutes les autres parties du programme, 
+		 Ce qui signifie que nous pouvons l'appeler dans n'importe quelle fonction/procédure sans passer en paramètre. 
+		Alors qu'une variable locale est déclarée d'une manière qui la rend disponible uniquement dans une fonction ou une procédure 				spécifique, 
+		Ce sont les variables déclarées dans la partie VAR de la fonction, de la procédure ou de l'algorithme principal lui-même.
+		Nous n'avons pas de mot clé global pour déclarer des variables globales. 
+		Cependant, les variables déclarées en dehors des fonctions, des procédures et de l'algorithme principal ont une 
+			"file scope   - portée de fichier", 
+		Ce qui signifie qu'elles sont visibles dans le fichier, à moins qu'elles ne soient masquées par une variable de même nom dans 				une portée locale.
+		NB: lorsque nous appelons une fonction ou une procédure, nous devons respecter le même ordre des paramètres.
+		NB: Les variables globales peuvent être utilisées dans n'importe quelle fonction/procédure sans avoir besoin de les passer en 				paramètres. 
+	//Passage de paramètres
+		 Supposons qu'une fonction Y() soit appelée depuis une autre fonction X().
+		 Dans ce cas, X est appelé la « fonction appelante » et Y est appelé la « fonction appelée ». 
+		 D plus, "les arguments" que X envoie à Y st appelés "arguments réels" et "les paramètres" de Y st appelés "arguments formels".
+		 
+		Formal Parameter - Paramètre formel : Une variable et son type tels qu'ils apparaissent dans le prototype de la fonction ou 				de la méthode.	
+		Actual Parameter - Paramètre réel : La variable ou l'expression correspondant à un paramètre formel qui apparaît dans l'appel 				de fonction ou de méthode dans l'environnement appelant.
+		Modes :
+			IN : Transmet les informations de l'appelant à l'appelé.
+			OUT : Called écrit des valeurs dans caller.
+			IN/OUT : l'appelant indique la valeur appelée de la variable, qui peut être mise à jour par l'appel.
+		//Méthodes importantes de passage de paramètres
+			1. Pass By Value : 
+				Utilise in-mode semantics - la sémantique en mode. 
+			2. Pass by reference (aliasing) :
+				Utilise  in/out-mode semantics - la sémantique in/out-mode
+				
+			NB: Le mot clé pour différencier le passage par valeur du passage par référence est le VAR dans la déclaration de 					paramètre.
+	//Resumé
+		Maintenant, nous maîtrisons la programmation procédurale qui est la solution qui rend notre façon de programmer beaucoup plus 				efficace.
+		Il nous aide également à produire un algorithme plus lisible et plus facile à entretenir.
+		Nous avons également défini la différence entre fonction et procédure.
+		Et enfin, nous avons appris à faire communiquer procédure et fonction à l'aide du ticket de paramètre
+//La récursivité (fonctions récursives)
+	Le faite d'appeler une fonction depuis son corps.
+	Une fction récurcive est celle qui s'appelle elle-même.
+	C qui l'amène à se réexécuter de manière séquentielle.
+---------------------------------------------------------------------11--------------------------------------------------------------------------
+//Algorithme de tri et de recherche
+	//Big O notation
+		https://www.bigocheatsheet.com/
+		Big O:pr décrire les performances,la complexité d'execution d'1 algorithme. "Uttilsé pour savoir si l'algo est evolutif ou non"
+		Big O décrit spécifiquement le pire des cas, et peut être utilisé pour décrire le temps d'exécution requis ou l'espace utilisé 				(par exemple en mémoire ou sur disque) par un algorithme.
+		Il est utilisé pour déterminer de quel facteur le nombre d'opérations augmentera à mesure que la quantité d'intrants augmente.
+		La notation est utile pour comparer des algorithmes utilisés à des fins similaires.
+	NB: On utilise le plus souvent 3 notations: 
+		"Big O(O)    | utilisé pour décrire le pire cas d'éfficacité
+		"Theta(θ)  | cas exact(juste)
+		"Omega(Ω)   | meilleur cas
+	//Simple Sorting(Bubble Sort) - Tri simple
+		Fonctionne en permutant à plusieurs reprises les éléments adjacents s'ils sont dans le mauvais ordre.
+		NB: 	la complexité la plus défavorable du tri à bulles est :O(n²)
+			l'avantage du tri par sélection par rapport aux autres techniques de tri est q'il ne nécessite aucun espace de 					stockage supplémentaire
+	//Merge sort - Tri par fusion
+		Le tri par fusion est l'un des algorithmes de tri les plus efficaces. 
+		Il fonctionne sur le principe de "Divide and Conquer" - Diviser pour mieux régner.
+		Le tri par fusion décompose à plusieurs reprises une liste en plusieurs sous-listes, jusqu'à ce que chaque sous-liste se 				compose d'un seul élément, fusionnant ensuite ces sous-listes qui deviendront une liste triée.
+	//Quick Sorting - Tri rapide
+		Comme Merge Sort, Quick Sort est un algorithme Divide and Conquer, "mais encore plus efficace car nous n'utilisons pas 				l'espace supplémentaire pour travailler.
+		Il sélectionne un élément que nous appelons "un pivot", 
+		 puis il les réorganise comme tel : comme les plus petits éléments sont pivotés vers la gauche et les plus gros éléments sont 			 pivotés vers la droite, c'est ce que nous appelons le partitionnement. 
+		Le tableau est ensuite divisé en deux partitions séparées par un pivot.
+	NB: 	l'algorithme de tri le plus rapide  parmi : Merge sort , Quick sort , Insertion sort - Shell sort est "Quick sort"
+		le temps d'exécution moyen d'un algorithme quick sort est "O(N log N)"
+		"l'élément pivot" à partir de l'entrée donnée en utilisant "median partitioning method" i.e la méthode de partitionnement 			médian. 8, 1, 4, 9, 6, 3, 5, 2, 7, 0.    est 6.
+	//Insertion sort - Le tri par insertion
+		Est un algorithme de tri simple qui fonctionne comme nous trions les cartes à jouer dans nos mains. Chaque fois que nous 				prenons une nouvelle carte, nous la mettons à la bonne place dans notre main.
+			.Trouver la position correcte pr chaq element qu'on trouve
+			.Vérifier si l'elemnt trouvé jusqu'à présent est superieur à l'elem sur leqel j suis actuellm
+			.Puis s'assurer de mettre le plus petit avant le grd.
+				pr le faire: Ns stockons l'elem sur leqel j suis actu ds une variable distincte
+			.Ensuite ns auront deuux parties: celle triée et celle non triée.
+			.Ns choisissons alors un elm d la partie non triée et l'insérons à la bonne position dans la partie triée.
+	//Simple linear search - Recherche linéaire simple
+		Selon le type d'opération de recherche, ces algorithmes de recherche sont généralement classés en deux catégories :
+			1.  Sequential Search - Recherche séquentielle :  "e.g : Linear Search - Recherche linéaire"
+				Dans ce cas, la liste ou le tableau est parcouru de manière séquentielle et chaque élément est vérifié. Par 
+				NB: 	
+					. la recherche linéaire est utilisée :"Lorsque la liste ne comporte que quelques éléments et Lors 							d'une seule recherche dans une liste non ordonnée".
+					. a une complexité temporelle de O(n), ce qui signifie que le temps dépend linéairement du nombre 							d'éléments
+					. a une implémentation très simple.
+					. le meilleur et le pire cas de complexité de la recherche linéaire ordonnée est "O(1), O(n)"
+					. "Inconvénient de la rech linéaire" : des complexités temporelles supérieures à celles d'autres 							algorithmes de recherche
+			2. Interval Search - Recherche par intervalle : "e.g : Binary Search - Recherche binaire"
+				Ces algorithmes sont spécifiquement conçus pour "la recherche dans des structures de données triées". 
+				Ces types d'algorithmes de recherche sont "beaucoup plus efficaces que la recherche linéaire" car ils ciblent 						à plusieurs reprises le centre de la structure de recherche et divisent l'espace de recherche en deux. 
+				NB: 
+					. utilisé pour rechercher dans de grands tableaux triés.
+					. a une complexité temporelle de O(log n) qui est une très bonne complexité temporelle.
+					. a une implémentation simple.
+					. Union of intervals - Union d'intervalles est une application de recherche binaire
+					. Trouver la borne inférieure/supérieure dans une séquence ordonnée est une application de recherche 							binaire
+					. e.g:  arr = {5,6,77,88,99} et clé = 88   ; le nombre d'itérations qui sont effectuées jusqu'à ce que 							l'élément soit trouvé est 2.
+		
+			
+---------------------------------------------------------------------12--------------------------------------------------------------------------
+	Rappel : 
+	   Généralement, les applications Web se composent de trois parties :
+		Front-end : peut être un site Web, une application mobile, une application TV, une application Smart Watch, etc.
+			"langages frontaux comme HTML, CSS, JavaScript".
+		Back-end : C'est ici que nous relions la base de données au front-end.
+			"Nous utilisons des langages de programmation comme JavaScript, C#, python, PHP...etc".
+		Base de données : C'est là que nous stockons les données de l'application (produits, clients, films, etc...)
+//ES6 plus connu sous le nom de ECMAScript  (ES6 n'est pas un langage de programmation)
+	https://www.educba.com/what-is-es6/
+	Est un "langage de script" basé sur les spécifications et la normalisation de la société internationale ECMA 
+	"ES6 ou script ECMA" qui constitue la base de JavaScript, est utilisé 
+		. pour "créer les normes du langage Javascript",  pour "normaliser le langage Javascript" afin de "favoriser 				plusieurs implémentations indépendantes".
+		. pour activer les langages côté client
+		. sur les langages tq JScript, JavaScript et ActionScript
+		. pour écrire moins de code et d'en faire plus.
+		. pour faciliter le développement de logiciels.
+	"Fonctionnalités les plus utilisés: 
+		Déclaration de variables 
+		Template Literals
+		String interpolation 
+		Arrow Functions 
+		Promises (pour réaliser des traitements de façon asynchrone). 
+		Array
+		Import
+		Export
+		Spread
+		Default
+		Variables
+		Littéraux d'objet améliorés - Enhanced Object Literals
+	//Déclaration de variables 
+		https://ui.dev/var-let-const/
+		NB: 	En JavaScript les variables sont initialisées à "undefined".
+			En JavaScript, il existe deux types de portée : "la portée globale - global scope" et "function scope - la portée de 					la fonction"
+		ES6 Conventions:
+			Use "var" to signal untouched legacy code - pour signaler le code hérité intact..
+				l’utilisation de var est déconseillée dans la plupart des cas
+				//Portée d’une variable avec var
+					.var nous donne une variable avec une portée globale.
+					.NB: Si elle est définie dans une fonction, sa portée se "limite à cette même fonction".
+					.Si elle è définie "en dehors de tte fonction", elle è alors référencée dans "l’objet global du script.
+						e.g :
+							for(var i = 0; i < 6; i++){
+							 var myNumber = i;
+							 console.log(myNumber); // 0, 1, 2, 3, 4, 5
+							}
+							console.log(myNumber); // 5
+			Use "let" if you have to rebind a variable - "let" si nous devons relier une variable..
+				Chaque fois que nous déclarons une variable avec let , 
+					. elle ne sera définie qu'à l'intérieur du bloc qui contient la déclaration.
+					. En d'autres termes, il n'è défini qà l'intérieur des accolades {} qi contiennent la déclaration let .
+				utiliser "let" pour définir ses variables JS "dès que votre variable est amenée à voir sa valeur modifiée".
+				//Portée d’une variable avec let
+					Avec "let" nous avons une variable avec pour portée de bloc.  
+					e.g : 
+						for(let i = 0; i < 6; i++){
+						 console.log(i); // 0, 1, 2, 3, 4, 5
+						}
+						console.log(i); // undefined
+			Use const by default - Utiliser const par défaut.
+				ES6 introduit également le mot-clé const qui permet de déclarer des constantes.
+				En JavaScript, on utilise donc le mot clé const pour définir des constantes. 
+				Avec const, ns créons en réalité une "référence constante accessible en lecture seule", qui pointe vers une 						adresse stockée en mémoire.
+				la valeur doit être initialisée lors de l’utilisation de const, sinon nous aurons une erreur.
+				//Portée d’une variable avec const
+					La portée d’une variable constante "se limite au bloc dans lequel elle a été initialisée".
+						e.g :
+							const numberOfHoursInADay = 24;
+							// NOT ALLOWED TO DO THIS
+							numberOfHoursInADay = 25; // TypeError is raised     -  Une erreur de type est signalée
+
+
+	//Template Literals    avec (``  i.e:  backtick ou backquote)
+		"Alt+F7" ou appuyer sur le bouton "~", tout en fonction de la disposition de la langue de votre clavier pour avoir (`).
+			https://superuser.com/questions/254076/how-do-i-type-the-tick-and-backtick-characters-on-windows
+		e.g:
+			let name = "John"
+			// using normal quotes
+			console.log("Hello "+name+", how are you ?");
+			// using ES6 template literals
+			console.log(`Hello ${name}, how are you ?`);
+		"En résumé", les template literals peuvent être utilisés pour :
+
+			Créer une chaîne multiligne.
+			Créer des expressions.
+			Mettre des variables dans une chaîne.
+		
+		//Ternary operator - Opérateur ternaire(conditional operator - 	opérateur conditionnel)
+			Est "le seul opérateur JavaScript" qui prend 3 opérandes, d'où le nom d'opérateur ternaire.
+			Utilisé comme raccourci pour l' if instruction.
+			Utilisé pour évaluer une condition et exécute un bloc de code basé sur la condition.
+			"condition ? expression1 : expression2"
+				Si la condition est true, expression1 est exécutée.
+				Si la condition est false, expression2 est exécutée.
+			
+			//Chained ternary operators - Opérateurs ternaires chaînés
+			  Nous pouvons également "imbriquer un opérateur ternaire en tant qu'expression" dans un "autre opérateur ternaire".
+				L'opérateur ternaire est "associatif à droite", ce qui signifie qu'il peut être "chaîné"
+				Similaire à une if … else if … else if … else chaîne .
+
+				function example(…) {
+				    return condition1 ? value1
+					 : condition2 ? value2
+					 : condition3 ? value3
+					 : value4;
+				}
+
+				// Equivalent to:
+
+				function example(…) {
+				    if (condition1) { return value1; }
+				    else if (condition2) { return value2; }
+				    else if (condition3) { return value3; }
+				    else { return value4; }
+				}
+			
+			Resumé :
+				Les "Template literals" sont des "string literals" permettant des expressions intégrées. Vous pouvez 						utiliser les fonctions "multi-line strings" et "string interpolation" avec eux. Ils étaient 						appelés "template strings" dans les éditions antérieures à la spécification ES2015. - L'"opérateur 						ternaire conditionnel" est le seul opérateur JavaScript qui prend "trois opérandes", une "condition" 						suivie d'un "point d'interrogation", puis "une expression à exécuter si la condition est vraie", 						suivie de "deux points" et enfin "l'expression à exécuter si la condition est fausse".
+
+	//Arrow functions
+		https://zendev.com/2018/10/01/javascript-arrow-functions-how-why-when.html
+	     . "Arrow functions" pr faire simple st une manière beaucoup plus concise et courte de définir des fonctions en Javascript.
+	     .	Leur particularité c'est qu'on utilise une flèche "=> pour définir une fonction" et on "n'utilise plus le mot clé function".
+			//Arrow functions présentent deux avantages majeurs : 
+				une syntaxe concise très claire et 
+				une portée et une "this liaison" plus intuitives .		
+			//Définir Arrow functions
+			(parametres) => { instructions }
+
+			E.g1:
+				// JavaScript (ES5)
+				function multiply() { return 2 * 3; };
+				// ES6
+				const multiply = () => { return 2 * 3 };
+			E.g2:
+				// JavaScript (ES5)
+				function multiply(x,y) { return x * y; };
+				// ES6
+				const multiply = (x,y) => { return x * y };
+	
+			
+			"Arrow functions peuvent être créées sans nom
+				//Higher Order Function or First Class Function -  Fonction d'ordre supérieur ou fonction de première classe
+					Une fonction :
+						. "peut être passée en argument à d'autres fonctions
+							e.g :
+								function sayHello() {
+								   return "Hello, ";
+								}
+								function greeting(helloMessage, name) {
+								  console.log(helloMessage() + name);
+								}
+								/*Nous traitons la fonction sayHello() en tant que valeur en:
+								   Passant sayHello() en argument à la fonction greeting().
+									NB: sayHello est appelée " fonction de rappel ".*/
+									greeting(sayHello, "JavaScript!");
+									// Hello, JavaScript!
+						. "peut être renvoyée par une autre fonction et 
+							e.g :
+								function sayHello() {
+								   return function() {
+								      console.log("Hello!");
+								   }
+								}
+								/* La fonction retournée est traitée ici comme une " valeur ".
+								Remarque : Une fonction qui renvoie une fonction est appelée fonction 											d'ordre supérieur .
+									sayHello est " une fonction d'ordre supérieur "*/
+								Pr invoquer sayHello et avoir une bonne réponse, 2 manieres de procéder:
+									1. Utiliser une variable ("Sinon  il renverrait la fonction elle-même 											sans appeler sa fonction renvoyée .")
+	
+										const sayHello = function() {
+										   return function() {
+										      console.log("Hello!");
+										   }
+										}
+										const myFunc = sayHello();
+										myFunc();
+										// Hello!
+									2. Utiliser des doubles parenthèses
+										function sayHello() {
+										   return function() {
+										      console.log("Hello!");
+										   }
+										}
+										sayHello()();
+										// Hello!
+										
+						. "peut être affectée en tant que valeur à une variable.
+							e.g : 
+								const foo = function() {
+								   console.log("foobar");
+								}
+								/*nous pouvons utiliser cette variable pour invoquer la fonction en ajoutant 										des parenthèses ()à la fin.*/
+								// L'invoquer en utilisant la variable
+								foo(); 
+					Rmrq: les fonctions dans ces 3 cas ci-dessus "sont traitées comme n'importe quelle autre variable. 
+		1.  //Syntaxe de Arrow functions
+			La structure de base ressemble à ceci :
+
+			(argument1, argument2, ... argumentN) => {
+			  // function body
+			}
+
+			"Nb: 
+				. Si le corps d la fonction est une expression unique, "ns pouvons omettre les crochets et la mettre en ligne. 
+				. s'il n'y a qu'un seul argument, "nous pouvons même omettre la parenthèse autour de l'argument.
+				"E.g1 :
+				// JavaScript (ES5)
+				function finDoubleOf(a) { return 2 * a; };
+				// ES6
+				const finDoubleOf = a => 2 * a ;
+				
+				"E.g2:
+				 const getFirst = array => array[0];
+			//Syntaxe avancée
+				NB: "object literal - Littéral d'objet"
+					Est une liste séparée par des virgules de paires nom-valeur à l'intérieur d'accolades.
+				1. Si nous essayons d'utiliser "la single-expression syntax - syntaxe à expression unique" en ligne mais que 						la valeur que vous retournez est "un littéral d'objet". 
+					"E.g :  wrong car on dirait que nous essayons de créer un corps de fonction traditionnel.
+							(name, description) => {name: name, description: description};
+						"right: pour indiquer qu'à la place, nous voulons une seule expression qui se trouve être un 								"objet", nous mettons l'objet "entre parenthèses" :
+							(name, description) => ({name: name, description: description});
+		2.   //Contexte de la portée englobante - Enclosing Scope Context( A revoir, faire plus de recherce dessus)
+			NB: 	les Arrow functions "n'ont pas leur propre contexte d'exécution" .
+				"e.g :
+					const test = {
+						//fonction anonyme
+						  name: 'test object',
+						  createAnonFunction: function() {
+						    return function() {
+						      console.log(this.name);
+						      console.log(arguments);
+						    };
+						  },
+						//Arrow function
+						  createArrowFunction: function() {
+						    return () => {
+						      console.log(this.name);
+						      console.log(arguments);
+						    };
+						  }
+						};
+				En pratique, cela signifie que les deux "this" et "arguments" sont "hérités de leur fonction parent".
+						> const anon = test.createAnonFunction('hello', 'world');
+						> const arrow = test.createArrowFunction('hello', 'world');
+
+						> anon();
+						undefined
+						{}
+
+						> arrow();
+						test object
+						{ '0': 'hello', '1': 'world' }
+				"La fonction anonyme" a "son propre contexte de fonction", donc lorsque nous l'appelons, il n'y a "aucune 						référence disponible à "this.name" objet de test, ni aux "arguments" appelés lors de sa création.
+
+				"Arrow function", quant à elle, "a exactement le même contexte de fonction que la fonction qui l'a créée", 						lui donnant "accès à la fois aux arguments et à l'objet de test".
+		  //Où les Arrow functions améliorent notre code?
+			L'un des principaux cas d'utilisation des Arrow functions concerne "les fonctions qui sont appliquées maintes et 					maintes fois aux éléments d'une liste".
+				"E.g" : 
+				  1. Transformer(utiliser) "map" à la place de "tableau de valeurs"
+					const words = ['hello', 'WORLD', 'Whatever'];
+					const downcasedWords = words.map(word => word.toLowerCase());
+				  2. Extraire une valeur particulière d'un objet
+					const names = objects.map(object => object.name);
+			a.   //  Promises and Promise Chains
+			NB: Un autre endroit où les Arrow functions "rendent le code plus propre et plus intuitif" est "la gestion du code 					asynchrone".
+			"Promises" facilitent grandement la gestion du code asynchrone
+			  Cependant, "l'utilisation des promesses nécessite toujours la définition de fonctions" qui "s'exécutent une fois 					notre code ou appel asynchrone terminé.
+			b.   // Object Transformations - Transformations d'objets
+			Une autre utilisation courante et extrêmement puissante des Arrow functions "consiste à encapsuler des transformations 					d'objets.
+		  //Où nous ne devrions pas utiliser les Arrow functions
+				//Deep Callchains - 
+				//Functions With Dynamic Context
+					Les endroits où "this" est liée dynamiquement.
+			
+
+		
+	
+	//Array(tableaux)
+	   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+	   Traiter un tableau en JavaScript peut être un peu compliqué et difficile à coder. 
+	   ES6 fournit des fonctions prédéfinies supplémentaires pour simplifier le travail avec les Arrays.
+		1. find()
+			- Pr trouver un élément dans un tableau
+			- renverra "la valeur du premier élément" qui satisfait les critères de recherche.
+			-Si aucune valeur ne satisfait la fonction de test, "undefined" est renvoyé.
+				"e.g":
+					const people = [{ name: 'Max' }, { name: 'Jack' }, { name: 'Marry' }]
+					// JavaScript
+					function findPerson(name) {
+					 for (let i = 0; i < people.length; i++) {
+					   let person = people[i]
+					   if (person.name == name) {
+					     return person
+					   }
+					 }
+					}
+					// ES6
+					function findPerson(name) {
+					 return people.find(person =>person.name == name)
+					}
+			//findIndex()
+				-Renvoie "l' index du premier élément du tableau" qui satisfait à la fonction de test fournie . 
+				-Sinon, elle renvoie -1, indiquant qu'aucun élément n'a réussi le test.
+					"e.g" : 
+						const array1 = [5, 12, 8, 130, 44];
+						const isLargeNumber = (element) => element > 13;
+						console.log(array1.findIndex(isLargeNumber));
+						// expected output: 3
+			//indexOf()
+				-renvoie le premier indice auquel un élément donné peut être trouvé dans le tableau, 
+				-ou -1 s'il n'est pas présent.
+					"e.g" :
+						const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+						console.log(beasts.indexOf('bison'));
+						// expected output: 1
+					"e.g"
+						// start from index 2
+						console.log(beasts.indexOf('bison', 2));
+						// expected output: 4
+			//includes()
+				détermine si un tableau inclut une certaine valeur parmi ses entrées, en retour true ou false selon le cas.
+					"e.g" : 
+						const array1 = [1, 2, 3];
+						console.log(array1.includes(2));
+						// expected output: true
+						const pets = ['cat', 'dog', 'bat'];
+						console.log(pets.includes('cat'));
+						// expected output: true
+			//some()
+				-teste si au moins un élément du tableau réussit le test mis en œuvre par la fonction fournie. 
+				-Elle renvoie true si, dans le tableau, elle trouve un élément pour lequel la fonction fournie renvoie true ; 					-sinon il retourne false. 
+				-Il ne modifie pas le tableau.
+					"e.g" : 
+						const array = [1, 2, 3, 4, 5];
+						// checks whether an element is even
+						const even = (element) => element % 2 === 0;
+						console.log(array.some(even));
+						// expected output: true
+
+
+		2. forEach()
+			-Exécute une fonction fournie une fois pour chaque élément du tableau.
+			-La méthode .forEach() parcourra le tableau et exécutera les mêmes instructions sur chaque élément du même tableau.
+			"Attention" : Cette méthode "n’utilise pas une copie du tableau lorsqu’elle est appelée", "elle manipule le 					tableau directement". Donc si on modifie le tableau en cours de route alors les boucles pourront être 					impactées. Il existe aussi plusieurs autres méthodes sympas pr itérer sur les tableaux (comme "some ou every")
+			-l'utiliser lorsque nous n'utilisons pas le tableau renvoyé(ou for...of à la place.)
+				"e.g" :
+					const people = [{ name: 'Max' }, { name: 'Jack' }, { name: 'Marry' }]
+					// JavaScript
+					function showEachOne(name) {
+					 for (let i = 0; i < people.length; i++) {
+					   alert(people[i].name)
+					 }
+					}
+					// ES6
+					const showEachOne = name => people.forEach(person => alert(person.name));
+		3. filter()
+			-filter() "crée un nouveau tableau avec tous les éléments qui réussissent le test implémenté par la fonction fournie.
+			-Si nous considérons un "tableau de produits où chaque produit est un objet"
+			-En appliquant la méthode du filtre , nous aurons un nouveau tableau qui éliminera tous les produits dont le prix est 					supérieur à 10 dollars.
+				"e.g" :
+					const products = [{name:"Milk",price:15}, {name:"Water", price:9}, {name:"Bread", price:5}];
+					// JavaScript
+					function filterProducts() {
+					 let cheapProducts = [];
+					 for (let i = 0; i < products.length; i++) {
+					   if (products[i].price < 10) cheapProducts.push(products[i]);
+					 }
+					 return cheapProducts;
+					}
+					// ES6
+					const filterProducts = () => products.filter(product => product.price < 10);
+				"e.g" :
+					const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+					const result = words.filter(word => word.length > 6);
+					console.log(result);
+					// expected output: Array ["exuberant", "destruction", "present"]
+		4. map()
+			ES6 fournit également une fonction "de transformation de tableau à l'aide de .map() .
+			Utiliser lorsque nous utilisons le tableau renvoyé
+			Supposons que nous voulions ajouter deux dollars au prix de chaque produit du tableau.
+			"forEach" exécute la même instruction sur chaque élément d'un tableau donné et 
+			la méthode ".map()" fait la même chose. 
+			Cependant, "cela se fait sur une copie du tableau, en laissant les données d'origine inchangées.
+				"e.g" :
+					const array1 = [1, 4, 9, 16];
+					// pass a function to map
+					const map1 = array1.map(x => x * 2);
+					console.log(map1);
+					// expected output: Array [2, 8, 18, 32]
+				"e.g" : 
+					const products = [
+					 { name: 'Milk', price: 15 },
+					 { name: 'Water', price: 9 },
+					 { name: 'Bread', price: 5 },
+					]
+
+					// JavaScript
+					function changeProducts() {
+					 for (let i = 0; i < products.length; i++) {
+					   products[i].price += 2
+					 }
+					 return products
+					}
+					// ES6
+					const changeProducts = () =>
+					products.map(product => ({ ...product, price: product.price + 2 }));
+					console.log(changeProducts());
+					console.log(products);
+		5. reduce()
+			Le cas le plus simple à comprendre reduce() est peut-être de renvoyer la somme de tous les éléments d'un tableau.
+			Elle parcourt le tableau élément par élément, ajoutant à chaque étape la valeur actuelle du tableau au résultat de 					l'étape précédente (ce résultat est la somme cumulée de toutes les étapes précédentes) — jusqu'à ce qu'il n'y 					ait plus d'éléments à ajouter.
+			La fonction reduce() "exécute la fonction fournie pour chaque valeur d'un tableau de gauche à droite.
+			La "valeur de retour(est une valeur unique)" est stockée dans"accumulator - un accumulateur.
+				"e.g" :
+					const data = [5, 10, 15, 20, 25]
+					const res = data.reduce((total, currentValue) =>  total + currentValue)
+					console.log(res)// 75
+				"e.g" :
+					const array1 = [1, 2, 3, 4];
+					const reducer = (previousValue, currentValue) => previousValue + currentValue;
+					// 1 + 2 + 3 + 4
+					console.log(array1.reduce(reducer));
+					// expected output: 10
+					// 5 + 1 + 2 + 3 + 4
+					console.log(array1.reduce(reducer, 5));
+					// expected output: 15
+
+			//Description de reduce()
+				 - reduce() exécute la "fonction callback une fois pour chaque élément présent dans le tableau" et "ignore les 						éléments vides du tableau". 
+				 - La fonction callback "utilise quatre arguments" :
+					NB: accumulateur, valeurCourante sont les seuls obligatoires.
+					. L'accumulateur (la valeur retournée par le précédent appel de la fonction callback), ou la valeur 							initiale s'il sagit du premier appel ;
+					. la valeur de l'élément courant ;
+					. l'index de l'élément courant ;
+					. le tableau parcouru par la méthode.
+					NB: si "valeurInitiale n'est pas fournie", reduce
+						- exécutera la "fonction callback" à partir de l'indice 1 et
+						- la première valeur du tableau (d'indice 0) sera utilisée pour valeurInitiale.
+				e.g:
+					[0, 1, 2, 3, 4].reduce(function(accumulateur, valeurCourante, index, array){
+					  return accumulateur + valeurCourante;
+					});
+					//Code ES6 correspondant
+					[0, 1, 2, 3, 4].reduce(
+					  (accumulateur, valeurCourante) => accumulateur + valeurCourante;
+					);
+		
+
+//Module Js  - (Named exports + Default exports) -  (import + export)
+	https://medium.com/@etherealm/named-export-vs-default-export-in-es6-affb483a0910
+	ES6 nous permet d'"importer un module et de l'utiliser dans d'autres fichiers.
+	C'est pourquoi ES6 a introduit deux nouveaux mots-clés : "export et import" .
+	Dans l'ensemble, la modularité "offre une plus grande facilité de gestion du développement logiciel.
+	La modularité signifie que "nous pouvons diviser le code d'un programme en plusieurs morceaux réutilisables (généralement regroupés 			dans des fichiers). 
+	En génie logiciel, la modularité fait référence à "la mesure dans laquelle une application logicielle/Web peut être divisée en modules 			plus petits.
+
+	Les types JavaScript que nous pouvons exporter ou importer sont :
+
+		String
+		Number
+		Function
+		Objects - Objets
+		Array
+		Anything  - N'importe quoi ...
+		
+	//Type d'exportations
+		Supposons que nous voulions utiliser un code créé dans un autre module, tout ce que nous avons à faire est "d'importer ce 				module dans notre fichier de travail.
+		Les deux types d'exportation sont :
+
+			"Named exports - Exportations nommées" : zéro ou plusieurs exportations par module
+			"Default exports - Exportations par défaut" : une par module
+			//Named exports
+				//------ lib.js ------
+				export function square(x) {
+				  return x * x;
+				}
+				export const sum = (x) => {
+				  return x + x;
+				}
+				//------ main.js ------
+				import { square, sum } from 'lib' ;
+				import * as library from 'lib' // this means import every exported module in lib and use the alias library
+
+			//Default exports
+				l'export par défaut nous donne le droit d'exporter "un seul module par défaut par fichier".
+					//------ myFunc.js ------
+					export default function funcName () { ... };
+					//------ main.js ------
+					import myFunc from 'myFunc';
+		NB: "named export" est la bonne façon de procéder lorsque "nous importons une variable d'un fichier, nous devons spécifier le 				même nom mentionné dans l'autre.
+
+//Object access chain - Chaîne d'accès aux objets (Destructuring - Déstructuration)
+	https://ponyfoo.com/articles/es6-destructuring-in-depth
+	Il "lie les propriétés à autant de variables que nécessaire et fonctionne à la fois avec les tableaux et les objets".
+	Lorsque vous travaillez "avec des objets", nous pouvons utiliser "la notation par points (également appelée chaîne d'accès aux 			objets ) pour obtenir la propriété d'un objet.
+		"e.g" :
+			let student = { address: { city: 'New York', country: 'USA' } }
+			console.log(student.address.city) // New York
+			console.log(student.address.country) // USA
+	//Utilisation de variables
+	   Les variables résolvent le problème du code redondant.
+	   lorsqu'il s'agit "d' objets profondément imbriqués" , nous pourrions nous retrouver avec "une longue chaîne d'accès aux objets" .
+		let student = { address: { city: 'New York', country: 'USA' } }
+		let city = student.address.city
+		let country = student.address.country
+		console.log(city) // New York
+		console.log(country) // USA
+	//ES6 Déstructuration
+		Les variables résolvent le problème du code redondant. 
+		Mais cela "rend le code plus long et plus difficile à lire". "C'est là qu'intervient la déstructuration" .
+		"Principe": décompresser des valeurs de tableaux, ou des propriétés d'objets, en variables distinctes.
+		"Remarque" : "la variable doit avoir le même nom" que "la propriété à l'intérieur de l'objet".
+			"e.g" : 
+				let { address } = {address:{city:"New York", country:"USA"}};
+				let {city, country} = address;
+				console.log(city) // New York
+				console.log(country) // USA
+//Spreading  (Problem of copying objects (references) - Problème de copie d'objets (références))
+	https://davidwalsh.name/spread-operator
+	Disons que nous avons deux tableaux et que "nous voulons fusionner les valeurs du premier tableau avec le second".
+	Rmrq : Nous pouvons également utiliser "concat" .
+	ES6 a introduit une approche plus naturelle en utilisant "spreading operator - l' opérateur d'épandage" qui fait la même chose.
+		
+		"e.g" :
+			let array1 = [1,2,3];
+			let array2 = [4,5,6];
+			// Using ES5
+			array1 = array1.concat(array2);
+			console.log(array1)//  [1,2,3,4,5,6,4,5,6]
+			// Using ES6
+			array1 = [...array1, ...array2];
+			console.log(array1)//  [1,2,3,4,5,6,4,5,6]
+	//Creating two copies of an object - Création de deux copies d'un objet :
+		"spreading operator - l' opérateur d'épandage" fait une énorme différence lorsqu'il s'agit de traiter des objets. 
+		La copie des propriétés d'un objet à un autre était plus délicate avec la fonction "Object.assign()" (avec laquelle il est un 				peu difficile de travailler).
+			"e.g" :
+				let object1 = { firstName: 'John', lastName: 'Brown' }
+				let object2 = { age: 25 }
+				let newObject1 = { ...object1, ...object2 }
+				console.log(newObject1)
+				/* {
+				firstName:"John",
+				lastName:"Brown",
+				age:25
+				}*/
+		NB: 
+				let newObject = {
+					 name: 'Daniel',                   "newObject  contient:  "             {name:”John”}    
+					 name: 'John',
+				}
+
+				let student1 = {name:"John"}
+					let student2 = {name:"Mary"}   	"newObject  contient:" {student1:{name:”John”}, student2:{name:”Mary”}}
+					let newObject = {
+					student1, student2
+				}
+
+
+				let student1 = {name:"John"}
+				let student2 = {name:"Mary"}
+				let newObject = {                                "newObject  contient: "            {name:”Mary”}
+				 ...student1,
+				 ...student2,
+				}
+
+
+				let student1 = {name:"John"}
+				let student2 = {name:"Mary"}
+				let newObject = {                                 "newObject  contient: "        {name:”Daniel”}
+				 ...student1,
+				 ...student2,
+				 name: 'Daniel',
+				}
+
+	//Conclusion ES6
+		ES6 introduit une nouvelle syntaxe et de nouvelles fonctionnalités impressionnantes pour moderniser notre code et le rendre 				plus facile à lire.
+		ES6 nous permet d'écrire moins de code et d'en faire plus.
+		ES6 nous présente de nombreuses fonctionnalités intéressantes telles que "arrow functions, template strings, class 				destruction, modules…" et plus encore.
+
+
